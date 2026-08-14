@@ -578,7 +578,7 @@
   <a href="#51" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.1 工具是受治理的动作接口
+        5.1 为什么“函数调用成功”不是工具成功
       
     </span>
   </a>
@@ -586,46 +586,213 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#52" class="md-nav__link">
+  <a href="#52-tool-definition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.2 工具描述决定模型策略
+        5.2 Tool Definition 的四个视图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Tool Definition 的四个视图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.1 一个类型化最小工具
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#53" class="md-nav__link">
+  <a href="#53-aci" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.3 执行流水线
+        5.3 参数设计：为模型构建 ACI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 参数设计：为模型构建 ACI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1 好参数表达业务意图
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#54" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#532-schema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.4 风险分级
+        5.3.2 Schema 需要表达什么
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#55" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#533-description" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.5 取消、超时和重试
+        5.3.3 Description 应写决策边界
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 规范值、模型内容与 UI 展示为什么要分开
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.4 规范值、模型内容与 UI 展示为什么要分开">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#541-outputschema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.1 output.schema 是成功值契约
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#542-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.2 render() 必须是纯投影
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#543-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.3 Presentation 也是协议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#55-dsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 DSH 工具执行流水线
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.5 DSH 工具执行流水线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#551" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.1 输入物化与身份
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#552-toolspre-execute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.2 tools/pre-execute
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#553-monotonic-guard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.3 Monotonic Guard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#554-toolsexecute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.4 tools/execute
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#555-toolspost-execute-finalizecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.5 tools/post-execute 与 finalizeContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#556-toolsresult" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.6 tools/result
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -633,7 +800,180 @@
   <a href="#56" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.6 工具展示也是接口设计
+        5.6 策略要按风险与参数动态计算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.6 策略要按风险与参数动态计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#561" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6.1 五级策略示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 审批：一项有日志边界的决策，不是弹窗
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.7 审批：一项有日志边界的决策，不是弹窗">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#571-fail-closed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7.1 Fail-closed 行为
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#572" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7.2 审批必须绑定什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 沙箱：权限边界必须由执行环境强制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.8 沙箱：权限边界必须由执行环境强制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#581-full-partial-enforcement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8.1 Full 与 Partial Enforcement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#582-runner-failure-policy-denial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8.2 Runner Failure 与 Policy Denial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 取消、超时与静止
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.9 取消、超时与静止">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#591" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9.1 超时不是后台继续许可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#592-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9.2 谁拥有 Timeout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#510" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 重试与幂等
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.10 重试与幂等">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10.1 幂等键应由谁产生
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#511-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.11 并行安全：只有明确 true 才能重叠
       
     </span>
   </a>
@@ -641,21 +981,82 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#512-turn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.12 组合工具、延迟上下文与 Turn 终结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#513" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.13 工具测试的四层金字塔
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.13 工具测试的四层金字塔">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一层：Schema 与纯投影
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        源码路标
+        第二层：执行与策略
       
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#loopsession" class="md-nav__link">
+    <span class="md-ellipsis">
       
-        <li class="md-nav__item">
+        第三层：Loop/Session 集成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        配套实验
+        第四层：真实环境契约
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#514" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.14 常见失败模式
       
     </span>
   </a>
@@ -666,7 +1067,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        本章小结
+        源码路标
       
     </span>
   </a>
@@ -677,7 +1078,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        思考题
+        配套实验
       
     </span>
   </a>
@@ -688,10 +1089,71 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        思考题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         求职面试题
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="求职面试题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基础题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安全题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        架构题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1328,7 +1790,7 @@
   <a href="#51" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.1 工具是受治理的动作接口
+        5.1 为什么“函数调用成功”不是工具成功
       
     </span>
   </a>
@@ -1336,46 +1798,213 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#52" class="md-nav__link">
+  <a href="#52-tool-definition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.2 工具描述决定模型策略
+        5.2 Tool Definition 的四个视图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Tool Definition 的四个视图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.1 一个类型化最小工具
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#53" class="md-nav__link">
+  <a href="#53-aci" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.3 执行流水线
+        5.3 参数设计：为模型构建 ACI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 参数设计：为模型构建 ACI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1 好参数表达业务意图
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#54" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#532-schema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.4 风险分级
+        5.3.2 Schema 需要表达什么
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#55" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#533-description" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.5 取消、超时和重试
+        5.3.3 Description 应写决策边界
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 规范值、模型内容与 UI 展示为什么要分开
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.4 规范值、模型内容与 UI 展示为什么要分开">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#541-outputschema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.1 output.schema 是成功值契约
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#542-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.2 render() 必须是纯投影
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#543-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.3 Presentation 也是协议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#55-dsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 DSH 工具执行流水线
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.5 DSH 工具执行流水线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#551" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.1 输入物化与身份
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#552-toolspre-execute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.2 tools/pre-execute
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#553-monotonic-guard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.3 Monotonic Guard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#554-toolsexecute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.4 tools/execute
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#555-toolspost-execute-finalizecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.5 tools/post-execute 与 finalizeContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#556-toolsresult" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5.6 tools/result
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1383,7 +2012,180 @@
   <a href="#56" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.6 工具展示也是接口设计
+        5.6 策略要按风险与参数动态计算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.6 策略要按风险与参数动态计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#561" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6.1 五级策略示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 审批：一项有日志边界的决策，不是弹窗
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.7 审批：一项有日志边界的决策，不是弹窗">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#571-fail-closed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7.1 Fail-closed 行为
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#572" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7.2 审批必须绑定什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 沙箱：权限边界必须由执行环境强制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.8 沙箱：权限边界必须由执行环境强制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#581-full-partial-enforcement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8.1 Full 与 Partial Enforcement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#582-runner-failure-policy-denial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8.2 Runner Failure 与 Policy Denial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 取消、超时与静止
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.9 取消、超时与静止">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#591" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9.1 超时不是后台继续许可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#592-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9.2 谁拥有 Timeout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#510" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 重试与幂等
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.10 重试与幂等">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10.1 幂等键应由谁产生
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#511-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.11 并行安全：只有明确 true 才能重叠
       
     </span>
   </a>
@@ -1391,21 +2193,82 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#512-turn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.12 组合工具、延迟上下文与 Turn 终结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#513" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.13 工具测试的四层金字塔
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.13 工具测试的四层金字塔">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一层：Schema 与纯投影
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        源码路标
+        第二层：执行与策略
       
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#loopsession" class="md-nav__link">
+    <span class="md-ellipsis">
       
-        <li class="md-nav__item">
+        第三层：Loop/Session 集成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        配套实验
+        第四层：真实环境契约
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#514" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.14 常见失败模式
       
     </span>
   </a>
@@ -1416,7 +2279,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        本章小结
+        源码路标
       
     </span>
   </a>
@@ -1427,7 +2290,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        思考题
+        配套实验
       
     </span>
   </a>
@@ -1438,10 +2301,71 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        思考题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         求职面试题
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="求职面试题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基础题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安全题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        架构题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1470,105 +2394,539 @@
   
 
 
-<h1 id="5">第5章 工具、审批与安全策略<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
+<h1 id="5">第 5 章　工具工程：从函数调用到受治理的行动接口<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
+<p>模型能否调用工具，决定 Agent 能否改变外部世界；工具是否被正确设计，决定一次模型错误会造成多大损害。一个 Demo 工具只需要名称、参数和 <code>execute()</code>，生产工具还必须处理作用域、审批、取消、超时、并发、幂等、结构化结果、模型内容、UI 展示和审计。</p>
+<p>本章的核心观点是：<strong>工具不是给模型的一段函数代码，而是 Agent 与 Environment 之间的一份受治理协议。</strong></p>
 <h2 id="_1">学习目标<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>能够编写一个类型化工具，理解工具Schema、规范值、模型内容和UI展示的区别，并设计执行前、执行中和执行后的安全策略。</p>
-<h2 id="51">5.1 工具是受治理的动作接口<a class="headerlink" href="#51" title="Permanent link">&para;</a></h2>
-<p>工具描述告诉模型“什么时候用”，参数Schema限制“以什么数据调用”，执行函数决定“真实世界发生什么”。一个生产工具还需要取消、超时、权限、审计、幂等和结果大小控制。</p>
-<p>官方工具DSL的最小形式如下：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">defineTool</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@deepseek-ai/dsh-tools&#39;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">defineTool</span><span class="p">({</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;greet&#39;</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Greet someone by name.&#39;</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nx">parameters</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">required</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nx">output</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nx">schema</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">_args</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;text&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="kt">value</span><span class="w"> </span><span class="p">}],</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="k">async</span><span class="w"> </span><span class="nx">execute</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">args</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">})</span>
+<p>完成本章后，你应当能够：</p>
+<ol>
+<li>区分模型 schema、规范输出、模型可见内容和 UI presentation；</li>
+<li>设计语义清晰、参数受限且可组合的 Tool Definition；</li>
+<li>解释 DSH 从 pre-execute 到 result 的完整执行流水线；</li>
+<li>使用单调 guard、审批与沙箱建立 fail-closed 策略；</li>
+<li>正确处理取消、超时、重试、幂等和并行安全；</li>
+<li>为高风险企业工具建立测试矩阵和审计证据。</li>
+</ol>
+<h2 id="51">5.1 为什么“函数调用成功”不是工具成功<a class="headerlink" href="#51" title="Permanent link">&para;</a></h2>
+<p>假设模型调用：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;send_report&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;arguments&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&quot;recipient&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;科室主任&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&quot;report_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;R-1024&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
 </code></pre></div>
-<p><code>execute</code>返回规范值；<code>render</code>将其转换为模型可见ContentBlock。把两者分开，有利于测试、日志和不同客户端展示。</p>
-<h2 id="52">5.2 工具描述决定模型策略<a class="headerlink" href="#52" title="Permanent link">&para;</a></h2>
-<p>描述应说明适用条件、禁止条件和输出语义，而不只是重复工具名。参数应表达业务概念，避免让模型传递内部表名、SQL片段或文件系统实现细节。</p>
-<p>较好的Data Agent工具参数是<code>metric_id</code>、<code>time_range</code>和<code>filters</code>；较差的是让模型直接填写任意<code>sql</code>。前者把错误限制在受治理语义空间，后者把数据库权限交给概率模型。</p>
-<h2 id="53">5.3 执行流水线<a class="headerlink" href="#53" title="Permanent link">&para;</a></h2>
-<p>DSH工具运行时提供多层介入点：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>模型调用
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  → 参数解析与可见性检查
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  → tools/pre-execute：允许 / 拒绝 / 请求审批
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  → monotonic guards：只能增加拒绝，不能覆盖其他拒绝
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  → tools/execute：超时、重试、指标包装
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  → 工具本体
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  → tools/post-execute：接受、替换、补充或阻断结果
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  → tools/result：观察最终冻结结果
+<p>即使函数返回 200，还存在很多未回答的问题：</p>
+<ul>
+<li>“科室主任”映射到哪个真实身份？</li>
+<li>当前用户是否有权发送这份报告？</li>
+<li>报告是否包含患者敏感信息？</li>
+<li>模型是否看过最终收件人和附件摘要？</li>
+<li>网络超时后邮件究竟发出没有？</li>
+<li>用户点两次重试会不会发送两封？</li>
+<li>UI 展示的是模型请求参数，还是业务系统最终采用的值？</li>
+<li>会话恢复后能否关联外部发送记录？</li>
+</ul>
+<p>工具完成必须同时满足四层契约：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>调用契约：参数合法且语义明确
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>策略契约：调用者、作用域和风险允许执行
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>执行契约：副作用达到确定终态或可查询状态
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>结果契约：模型、用户和审计看到一致且适量的证据
 </code></pre></div>
-<p>审批不是一个弹窗，而是pre-execute中的策略决定。若当前表面不支持审批，“ask”必须安全失败，而不是默认为允许。</p>
-<h2 id="54">5.4 风险分级<a class="headerlink" href="#54" title="Permanent link">&para;</a></h2>
+<p>只实现第一层，Agent 仍然只是一个高风险自动化脚本。</p>
+<h2 id="52-tool-definition">5.2 Tool Definition 的四个视图<a class="headerlink" href="#52-tool-definition" title="Permanent link">&para;</a></h2>
+<p>DSH 的工具定义可以拆成四个不同消费者看到的视图：</p>
 <table>
 <thead>
 <tr>
-<th>风险</th>
-<th>示例</th>
-<th>推荐策略</th>
+<th>视图</th>
+<th>消费者</th>
+<th>包含内容</th>
+<th>不应包含</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>只读低风险</td>
-<td>读取公开文件</td>
-<td>自动允许，限制大小</td>
+<td><strong>ToolSchema</strong></td>
+<td>模型</td>
+<td>name、description、parameters</td>
+<td>执行回调、超时、内部策略</td>
 </tr>
 <tr>
-<td>只读敏感</td>
-<td>查询患者记录</td>
-<td>身份鉴权、字段脱敏、审计</td>
+<td><strong>Canonical Value</strong></td>
+<td>Harness/组合工具</td>
+<td>经过 output schema 校验的 JSON 值</td>
+<td>UI 组件、任意类实例</td>
 </tr>
 <tr>
-<td>可逆写入</td>
-<td>创建草稿</td>
-<td>展示差异，可撤销或确认</td>
+<td><strong>ContentBlock[]</strong></td>
+<td>模型历史</td>
+<td>从规范值渲染出的文本/结构内容</td>
+<td>不受控巨量原始数据</td>
 </tr>
 <tr>
-<td>外部影响</td>
-<td>发消息、执行付款</td>
-<td>明确审批、幂等键、限额</td>
-</tr>
-<tr>
-<td>高危不可逆</td>
-<td>删除生产数据</td>
-<td>默认拒绝或专用人工流程</td>
+<td><strong>Presentation</strong></td>
+<td>UI/回放</td>
+<td>pending/completed 卡片意图与元数据</td>
+<td>运行时对象和不可重放状态</td>
 </tr>
 </tbody>
 </table>
-<p>不能只按工具名授权。同一个Shell工具既能运行测试，也能删除文件；策略需要结合参数、工作区、用户、Agent作用域和当前审批上下文。</p>
-<h2 id="55">5.5 取消、超时和重试<a class="headerlink" href="#55" title="Permanent link">&para;</a></h2>
-<p>取消信号应贯穿策略监听器、工具包装器和工具本体。超时后后台工作若继续运行，用户可能认为操作失败后重试，实际产生两次副作用。写操作重试前必须有幂等标识或可查询的执行状态。</p>
-<h2 id="56">5.6 工具展示也是接口设计<a class="headerlink" href="#56" title="Permanent link">&para;</a></h2>
-<p>DSH允许工具声明generic、terminal、diff、search、read或web等展示意图。它不是装饰：用户审批一个文件修改时必须看到准确diff；搜索结果被截断时UI必须明确显示不完整，不能让部分结果伪装成全部结果。</p>
-<h2 id="_2">源码路标<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="mermaid">flowchart LR
+    Model[模型 ToolSchema] --&gt; Args[参数 JSON]
+    Args --&gt; Execute[execute]
+    Execute --&gt; Value[Canonical JSON Value]
+    Value --&gt; Render[output.render]
+    Render --&gt; Content[模型 ContentBlocks]
+    Value --&gt; Meta[presentationMeta]
+    Args --&gt; Pending[presentCall]
+    Content --&gt; Complete[presentResult]
+    Meta --&gt; Complete</div>
+<h3 id="521">5.2.1 一个类型化最小工具<a class="headerlink" href="#521" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">defineTool</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@deepseek-ai/dsh-tools&#39;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">greet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">defineTool</span><span class="p">({</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;greet&#39;</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Greet one person after the user asks for a greeting.&#39;</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nx">parameters</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">required</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="nx">output</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="nx">schema</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nx">render</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">_args</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;text&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="kt">value</span><span class="w"> </span><span class="p">}],</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="k">async</span><span class="w"> </span><span class="nx">execute</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">args</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">})</span>
+</code></pre></div>
+<p><code>defineTool</code> 从同一份 schema 推导 TypeScript 参数，运行时仍会完整校验。类型推导防止作者写错代码，运行时校验防止模型或外部调用者发送非法 JSON；两者不能互相替代。</p>
+<h2 id="53-aci">5.3 参数设计：为模型构建 ACI<a class="headerlink" href="#53-aci" title="Permanent link">&para;</a></h2>
+<p>传统 API 面向确定性程序员，Agent-Computer Interface（ACI）面向概率模型。模型会根据名称、描述、参数和历史示例决定是否调用，因此接口要减少歧义和错误自由度。</p>
+<h3 id="531">5.3.1 好参数表达业务意图<a class="headerlink" href="#531" title="Permanent link">&para;</a></h3>
+<p>以智能问数为例：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// 较好</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">&quot;metric_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reported_test_item_count&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">&quot;time_range&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-01-01&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;end&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-06-30&quot;</span><span class="p">},</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">&quot;filters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;patient_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;outpatient&quot;</span><span class="p">}</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// 高风险</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">&quot;sql&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SELECT ...&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">&quot;database&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;prod&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">&quot;timeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>第一种把模型限制在业务语义空间，确定性服务负责解析口径和编译 SQL；第二种让模型同时决定物理表、连接、成本和安全边界。</p>
+<h3 id="532-schema">5.3.2 Schema 需要表达什么<a class="headerlink" href="#532-schema" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/user/develop/basic/tool.md">工具教程</a></li>
-<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cookbook/adding-a-tool.md">添加工具Cookbook</a></li>
-<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/tool-execution-pipeline.md">Tool Execution Pipeline</a></li>
+<li>必填与可选字段；</li>
+<li>标量类型、枚举和常量；</li>
+<li>数组元素与对象属性；</li>
+<li>是否允许额外字段；</li>
+<li><code>oneOf</code> 互斥形态；</li>
+<li>输入大小和业务范围（必要时在执行前进一步校验）。</li>
 </ul>
-<h2 id="_3">配套实验<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>Lab 02实现基础工具；Lab 04进一步把自由SQL改造成计划、校验和审批后执行的受控查询。</p>
-<h2 id="_4">本章小结<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>生产工具的核心不是<code>execute()</code>，而是清晰语义、最小权限、执行策略、可取消副作用和可验证展示。</p>
-<h2 id="_5">思考题<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>DSH 只接受其实际强制执行的 JSON Schema 子集；不支持的关键字会被拒绝，而不是“写在 schema 里但不生效”。这是一项重要安全原则：<strong>声明的约束必须等于真实执行的约束。</strong></p>
+<h3 id="533-description">5.3.3 Description 应写决策边界<a class="headerlink" href="#533-description" title="Permanent link">&para;</a></h3>
+<p>坏描述：“查询数据。”</p>
+<p>较好描述应说明：</p>
+<ul>
+<li>什么时候使用；</li>
+<li>什么时候不要使用；</li>
+<li>参数采用哪种业务 ID；</li>
+<li>返回的是完整结果、候选还是摘要；</li>
+<li>是否只读、是否需要确认；</li>
+<li>常见失败如何解释。</li>
+</ul>
+<p>但不要把强制权限规则只写进描述。Description 影响模型策略，不构成执行授权。</p>
+<h2 id="54-ui">5.4 规范值、模型内容与 UI 展示为什么要分开<a class="headerlink" href="#54-ui" title="Permanent link">&para;</a></h2>
+<p>假设搜索工具得到：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DSH tool pipeline&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nt">&quot;hits&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">],</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nt">&quot;total&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1032</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="nt">&quot;truncated&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="nt">&quot;artifact_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;search-82&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
+</code></pre></div>
+<p>规范值保留机器可组合字段；模型内容可以只呈现前 10 条、总数与 artifact 引用；UI 则渲染搜索卡片和“结果已截断”标记。若 <code>execute()</code> 直接返回一段漂亮 Markdown：</p>
+<ul>
+<li>组合工具无法可靠读取 <code>total</code>；</li>
+<li>UI 只能重新解析文本；</li>
+<li>截断状态可能被遗漏；</li>
+<li>测试只能做脆弱字符串比较；</li>
+<li>后续版本难以保持兼容。</li>
+</ul>
+<h3 id="541-outputschema">5.4.1 <code>output.schema</code> 是成功值契约<a class="headerlink" href="#541-outputschema" title="Permanent link">&para;</a></h3>
+<p>工具函数返回值先通过 output schema。无效参数产生 <code>INVALID_ARGS</code>，函数或后置策略给出非法成功值产生 <code>INVALID_TOOL_OUTPUT</code>。一个返回 200 但结构不符合契约的 Provider 不能被包装成成功结果。</p>
+<h3 id="542-render">5.4.2 <code>render()</code> 必须是纯投影<a class="headerlink" href="#542-render" title="Permanent link">&para;</a></h3>
+<p><code>render(args,value)</code> 从已校验值生成模型 ContentBlocks，不应再次查询网络、读取当前时间或依赖可变全局状态。否则回放同一工具结果会产生不同模型内容。</p>
+<h3 id="543-presentation">5.4.3 Presentation 也是协议<a class="headerlink" href="#543-presentation" title="Permanent link">&para;</a></h3>
+<p><code>presentCall()</code> 和 <code>presentResult()</code> 可以表达 terminal、diff、search、read、web 或 generic 等展示意图。它们必须可从持久参数与结果重放。审批文件修改时，用户应看到准确 diff；结果被截断或部分失败时，UI 必须明确显示，不能把部分数据伪装成完整结果。</p>
+<h2 id="55-dsh">5.5 DSH 工具执行流水线<a class="headerlink" href="#55-dsh" title="Permanent link">&para;</a></h2>
+<p>一次工具执行不是注册表中的直接函数调用：</p>
+<div class="mermaid">flowchart TB
+    Call[ToolExecutionInput] --&gt; Materialize[JSON物化、参数冻结、分配token]
+    Materialize --&gt; Pre[tools/pre-execute&lt;br/&gt;allow / deny / ask waterfall]
+    Pre --&gt; Guard[monotonic guards&lt;br/&gt;只可增加拒绝]
+    Guard --&gt; Around[tools/execute&lt;br/&gt;超时/遥测/信号包装]
+    Around --&gt; Body[Tool execute]
+    Body --&gt; Validate[output schema + render]
+    Validate --&gt; Post[tools/post-execute&lt;br/&gt;检查或替换结果]
+    Post --&gt; Finalize[tool-owned finalizeContent]
+    Finalize --&gt; Freeze[冻结并物化权威结果]
+    Freeze --&gt; Result[tools/result 观察]</div>
+<h3 id="551">5.5.1 输入物化与身份<a class="headerlink" href="#551" title="Permanent link">&para;</a></h3>
+<p>注册表把调用参数跨一次无损 JSON 边界并深度冻结，分配不可伪造的执行 token。callId 用于会话和 UI 关联，rootCallId 关联嵌套调用树，parent token 标识组合/Code Mode 子分派。插件不应通过修改参数对象在策略之后偷换调用含义。</p>
+<h3 id="552-toolspre-execute">5.5.2 <code>tools/pre-execute</code><a class="headerlink" href="#552-toolspre-execute" title="Permanent link">&para;</a></h3>
+<p>这是可扩展策略 waterfall，可以根据工具、参数、Agent、会话和当前权限返回 allow、deny 或 ask。它适合组合通用策略，但监听器顺序可能影响可扩展决策，因此后面还有单调 guard 兜底。</p>
+<h3 id="553-monotonic-guard">5.5.3 Monotonic Guard<a class="headerlink" href="#553-monotonic-guard" title="Permanent link">&para;</a></h3>
+<p>Guard 只能返回拒绝原因或 <code>undefined</code>，没有 allow 返回值。它在所有 pre-execute 监听器之后运行，任何 guard 的拒绝都不能被后续宽松插件改回允许。</p>
+<p>这个设计适合所有者级硬边界，例如：</p>
+<ul>
+<li>工作区路径越界；</li>
+<li>只读会话尝试写操作；</li>
+<li>租户不匹配；</li>
+<li>计划哈希与审批不一致；</li>
+<li>明确禁止的命令或资源。</li>
+</ul>
+<h3 id="554-toolsexecute">5.5.4 <code>tools/execute</code><a class="headerlink" href="#554-toolsexecute" title="Permanent link">&para;</a></h3>
+<p>这是环绕真实分派的 waterfall，适合超时、追踪、指标和熔断器。包装器可以为下游替换 signal，但不能移除调用方取消；注册表会融合原始 signal，防止中间件通过换信号绕过上游取消。</p>
+<h3 id="555-toolspost-execute-finalizecontent">5.5.5 <code>tools/post-execute</code> 与 <code>finalizeContent</code><a class="headerlink" href="#555-toolspost-execute-finalizecontent" title="Permanent link">&para;</a></h3>
+<p>post-execute 可以检查、阻断或替换执行结果，例如敏感字段脱敏和外部证据校验。<code>finalizeContent</code> 属于工具定义本身，是每种规范化结果最后一次模型内容投影机会，即使某些外层失败绕过 post 也会运行；它必须是 total function，不应抛错。</p>
+<h3 id="556-toolsresult">5.5.6 <code>tools/result</code><a class="headerlink" href="#556-toolsresult" title="Permanent link">&para;</a></h3>
+<p>最终观察者拿到冻结的权威结果，用于遥测和审计，不再拥有修改权。把审计放在 pre 阶段会记录“准备执行”，不等于“实际最终结果”；两者应分别统计。</p>
+<h2 id="56">5.6 策略要按风险与参数动态计算<a class="headerlink" href="#56" title="Permanent link">&para;</a></h2>
+<p>仅按工具名分为“安全/危险”通常不够：</p>
+<table>
+<thead>
+<tr>
+<th>工具调用</th>
+<th>风险可能变化的参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read_file</code></td>
+<td>路径、文件类型、大小、租户目录</td>
+</tr>
+<tr>
+<td><code>shell</code></td>
+<td>命令、cwd、网络、sandbox mode</td>
+</tr>
+<tr>
+<td><code>query_data</code></td>
+<td>指标敏感级别、时间范围、预计扫描量</td>
+</tr>
+<tr>
+<td><code>send_message</code></td>
+<td>收件人、是否外部、附件、批量数量</td>
+</tr>
+<tr>
+<td><code>update_record</code></td>
+<td>对象状态、字段、版本、可逆性</td>
+</tr>
+</tbody>
+</table>
+<p>一个实用风险函数可以考虑：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>risk = f(tool, normalized_args, user, tenant, agent_scope,
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>         environment, data_classification, reversibility, blast_radius)
+</code></pre></div>
+<p>它不一定由模型计算。参数归一化、目录边界、数据分类和权限匹配应尽量确定性完成；模型可以解释风险，但不能成为唯一裁决者。</p>
+<h3 id="561">5.6.1 五级策略示例<a class="headerlink" href="#561" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>等级</th>
+<th>示例</th>
+<th>默认处置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>低风险只读</td>
+<td>读取公开小文件</td>
+<td>自动允许，限制大小</td>
+</tr>
+<tr>
+<td>敏感只读</td>
+<td>查询患者明细</td>
+<td>身份/用途校验、脱敏、审计</td>
+</tr>
+<tr>
+<td>可逆写入</td>
+<td>创建草稿或新分支</td>
+<td>展示差异，允许撤销</td>
+</tr>
+<tr>
+<td>外部影响</td>
+<td>发消息、提交工单、付款</td>
+<td>一次性审批、幂等、限额</td>
+</tr>
+<tr>
+<td>高危不可逆</td>
+<td>删除生产数据、修改权限</td>
+<td>默认拒绝或独立人工流程</td>
+</tr>
+</tbody>
+</table>
+<h2 id="57">5.7 审批：一项有日志边界的决策，不是弹窗<a class="headerlink" href="#57" title="Permanent link">&para;</a></h2>
+<p>DSH 审批服务把一次询问关联到具体 Agent、工具名和 callId，并在开放 turn 内记录 <code>approval/asked</code> 与 <code>approval/decided</code>。可能结果包括允许一次、拒绝、取消和不可用。</p>
+<h3 id="571-fail-closed">5.7.1 Fail-closed 行为<a class="headerlink" href="#571-fail-closed" title="Permanent link">&para;</a></h3>
+<p>会话策略为 <code>ask</code> 时，问题交给应答者链；没有应答者、应答者抛错或返回非法值时，结果是 unavailable，而不是默认允许。策略为 <code>never</code> 时，在应答者 waterfall 之前确定性拒绝，即使某个 prepend 插件也不能绕过。</p>
+<div class="mermaid">sequenceDiagram
+    participant Tool as Tool Policy
+    participant Approval as ctx.approval
+    participant Session
+    participant UI as Answerer/UI
+    Tool-&gt;&gt;Approval: request(agent, toolName, callId, reason)
+    Approval-&gt;&gt;Session: approval/asked
+    alt policy = never
+        Approval-&gt;&gt;Session: approval/decided(rejected)
+    else policy = ask
+        Approval-&gt;&gt;UI: approval/request
+        UI--&gt;&gt;Approval: allowed-once / rejected / cancelled
+        Approval-&gt;&gt;Session: approval/decided
+    end
+    Approval--&gt;&gt;Tool: closed outcome</div>
+<p>审批审计事件本身不直接进入模型 transcript；模型通过工具结果和当前权限上下文理解决策。</p>
+<h3 id="572">5.7.2 审批必须绑定什么<a class="headerlink" href="#572" title="Permanent link">&para;</a></h3>
+<p>对企业操作，通用“同意继续”不够。审批凭证至少应绑定：</p>
+<ul>
+<li>user 与 tenant；</li>
+<li>conversation/session；</li>
+<li>tool 与规范化参数摘要；</li>
+<li>plan hash 或资源版本；</li>
+<li>风险说明与预览；</li>
+<li>有效期；</li>
+<li>一次性消费状态。</li>
+</ul>
+<p>用户批准 A 计划后参数变化，旧审批必须失效。允许一次不能被缓存成永久 allow。</p>
+<h2 id="58">5.8 沙箱：权限边界必须由执行环境强制<a class="headerlink" href="#58" title="Permanent link">&para;</a></h2>
+<p>Prompt 中“只能写工作区”不是安全边界。DSH 的 sandbox seam 为进程 argv 应用逐调用文件效果策略：</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>文件效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read-only</code></td>
+<td>拒绝写入，只开放运行所需最小 sink</td>
+</tr>
+<tr>
+<td><code>workspace-write</code></td>
+<td>允许工作区与后端承诺的临时区域写入</td>
+</tr>
+<tr>
+<td><code>danger-full-access</code></td>
+<td>绕过隔离，必须被显式视为提权</td>
+</tr>
+</tbody>
+</table>
+<p>网络和进程可见性不属于这组模式的承诺，不能看到 <code>read-only</code> 就推断“无法联网”。沙箱能力应按文件、网络、进程、系统调用和密钥分别描述。</p>
+<h3 id="581-full-partial-enforcement">5.8.1 Full 与 Partial Enforcement<a class="headerlink" href="#581-full-partial-enforcement" title="Permanent link">&para;</a></h3>
+<p>Provider 会报告 <code>full</code> 或 <code>partial</code>。partial 表示平台或内核无法管控承诺的全部文件效果；要求强隔离的产品必须拒绝或显著上报，不能把“尽力限制”展示成安全保证。</p>
+<h3 id="582-runner-failure-policy-denial">5.8.2 Runner Failure 与 Policy Denial<a class="headerlink" href="#582-runner-failure-policy-denial" title="Permanent link">&para;</a></h3>
+<p>命令失败有两种完全不同的含义：</p>
+<ul>
+<li>sandbox runner 自己未能启动，命令根本没有执行；</li>
+<li>sandbox 正常工作，并拒绝命令的越界效果。</li>
+</ul>
+<p>Provider 返回后端特定诊断规则，Consumer 结合退出码和 stderr 分类。只看非零退出码会把基础设施故障误报成“安全策略成功阻断”。受限模式找不到可用后端时必须 fail closed，禁止静默无隔离透传。</p>
+<h2 id="59">5.9 取消、超时与静止<a class="headerlink" href="#59" title="Permanent link">&para;</a></h2>
+<p>工具 <code>execute(args, exec)</code> 必须观察或转发 <code>exec.signal</code>，并且 Promise 只在自己拥有的工作达到 quiescence 后 settle。注册表不会因为超时就放弃同进程 Promise；它只能发出取消并等待协作结束。</p>
+<h3 id="591">5.9.1 超时不是后台继续许可<a class="headerlink" href="#591" title="Permanent link">&para;</a></h3>
+<p>如果工具超时后仍在后台写数据库，Agent 可能收到错误并重试，造成双重副作用。正确实现需要：</p>
+<ul>
+<li>传递取消到数据库/HTTP/子进程；</li>
+<li>若无法取消，返回可查询 operation ID；</li>
+<li>重试前查询既有状态；</li>
+<li>明确区分“请求超时”和“业务操作失败”；</li>
+<li>在关闭资源前等待在途动作收敛。</li>
+</ul>
+<h3 id="592-timeout">5.9.2 谁拥有 Timeout<a class="headerlink" href="#592-timeout" title="Permanent link">&para;</a></h3>
+<p>工具定义的 <code>timeoutMs</code> 是宿主调度元数据，不发送给模型。超时 policy 通过 <code>tools/execute</code> 包装执行。业务 API 自身可能有更短超时，两者要分别记录：Harness 超时说明等待预算耗尽，Provider 超时说明下游契约失败。</p>
+<h2 id="510">5.10 重试与幂等<a class="headerlink" href="#510" title="Permanent link">&para;</a></h2>
+<p>可以安全自动重试的通常是：</p>
+<ul>
+<li>在发送前明确失败；</li>
+<li>只读、无外部副作用且成本可控；</li>
+<li>带幂等键且 Provider 保证同键不重复执行；</li>
+<li>可通过 operation ID 查询并续接。</li>
+</ul>
+<p>不应自动重试：权限拒绝、参数非法、业务冲突、未知终态的非幂等写入，以及已经达到资源上限的高成本查询。</p>
+<h3 id="5101">5.10.1 幂等键应由谁产生<a class="headerlink" href="#5101" title="Permanent link">&para;</a></h3>
+<p>随机重试一次就生成新键会失去幂等意义。键应与一次业务意图或批准计划稳定绑定，例如：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>idempotency_key = hash(tenant, user, operation_type,
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>                       normalized_payload, approval_id)
+</code></pre></div>
+<p>同时要防止不同合法操作因键过粗被误合并。Provider 保存键、请求摘要、最终状态和版本，Agent 只消费结果。</p>
+<h2 id="511-true">5.11 并行安全：只有明确 <code>true</code> 才能重叠<a class="headerlink" href="#511-true" title="Permanent link">&para;</a></h2>
+<p>工具可以通过纯同步分类器声明某组参数并行安全。省略、抛错或返回非 <code>true</code> 都按 exclusive 处理。</p>
+<p>可并行工具必须满足：</p>
+<ul>
+<li>不修改父级共享状态；</li>
+<li>共享资源支持并发或结果可交换；</li>
+<li>取消一个调用不会错误终止兄弟调用；</li>
+<li>记录器竞争要么可交换，要么 fail closed；</li>
+<li>输出顺序由调度器恢复，不依赖完成时间。</li>
+</ul>
+<p>“都是 GET 请求”并不自动安全：下游可能有速率限制、共享游标或非线程安全客户端。应从资源语义验证，而不是从 HTTP 方法猜测。</p>
+<h2 id="512-turn">5.12 组合工具、延迟上下文与 Turn 终结<a class="headerlink" href="#512-turn" title="Permanent link">&para;</a></h2>
+<p>组合工具可能在一次外层执行中分派多个原生工具。<code>deferContext()</code> 把子调用产生的模型上下文附着到外层最终结果，避免外层尚未结束时向 Agent Loop 注入半成品；<code>concludeTurn()</code> 只能由成功权威结果标记当前 turn 终结，并通过组合层显式传播。</p>
+<p>这解决两个问题：</p>
 <ol>
-<li>为什么“数据库只读账号”仍然不足以保证安全？</li>
-<li>哪些错误可以自动重试，哪些错误重试会扩大损害？</li>
-<li>工具结果应当何时截断，完整结果又应保存在哪里？</li>
+<li>嵌套工具的上下文与外层工具结果保持提交顺序；</li>
+<li>任意失败或中间调用不能假冒“任务已经完成”。</li>
 </ol>
-<h2 id="_6">求职面试题<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>为“发送企业微信通知”工具设计参数、审批、幂等、重试、审计和UI展示。</p>
+<p>Code Mode 还使用 parent token 区分模型直接调用与代码内部子分派，在配置为 code transport 时阻止模型绕过外层直接调用原生工具。</p>
+<h2 id="513">5.13 工具测试的四层金字塔<a class="headerlink" href="#513" title="Permanent link">&para;</a></h2>
+<h3 id="schema">第一层：Schema 与纯投影<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h3>
+<ul>
+<li>有效/无效参数；</li>
+<li>output schema；</li>
+<li>render、presentation 在同输入上确定；</li>
+<li>大值、空值、Unicode 和边界长度。</li>
+</ul>
+<h3 id="_2">第二层：执行与策略<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>allow、deny、ask 和多个 guard；</li>
+<li>缺少审批应答者时 fail closed；</li>
+<li>signal 取消与 timeout；</li>
+<li>Provider 错误归类；</li>
+<li>post-execute 脱敏和非法输出阻断。</li>
+</ul>
+<h3 id="loopsession">第三层：Loop/Session 集成<a class="headerlink" href="#loopsession" title="Permanent link">&para;</a></h3>
+<ul>
+<li>tool/call 与 result 配对；</li>
+<li>模型看到的 content 与 UI presentation 一致；</li>
+<li>并行完成乱序但持久顺序稳定；</li>
+<li>恢复与 replay 不重新执行副作用。</li>
+</ul>
+<h3 id="_3">第四层：真实环境契约<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>沙箱越界被真实拒绝；</li>
+<li>数据库只读、成本与行列权限；</li>
+<li>幂等重试；</li>
+<li>API 超时后的 operation 查询；</li>
+<li>审计日志与业务系统对账。</li>
+</ul>
+<p>真实模型不应承担前两层测试。确定性策略用确定性测试，模型测试用于验证“是否会在正确时机选择工具”。</p>
+<h2 id="514">5.14 常见失败模式<a class="headerlink" href="#514" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>表象</th>
+<th>根因</th>
+<th>首先检查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型经常选错工具</td>
+<td>命名/描述重叠、参数过于通用</td>
+<td>schemas、轨迹中的候选工具</td>
+</tr>
+<tr>
+<td>参数看似合法却执行业务错误</td>
+<td>schema 只有类型，没有语义归一化</td>
+<td>规范参数、领域校验</td>
+</tr>
+<tr>
+<td>策略插件顺序变化后越权</td>
+<td>allow 可覆盖 deny，缺少单调 guard</td>
+<td>pre-execute 链与 guard</td>
+</tr>
+<tr>
+<td>Headless 中 ask 自动通过</td>
+<td>审批没有 fail closed</td>
+<td>approval outcome 应为 unavailable/rejected</td>
+</tr>
+<tr>
+<td>UI 展示成功但模型收到错误</td>
+<td>presentation 与权威结果使用不同来源</td>
+<td>frozen result、presentResult</td>
+</tr>
+<tr>
+<td>超时后出现重复写入</td>
+<td>下游未取消、重试无幂等</td>
+<td>operation ID、时间线</td>
+</tr>
+<tr>
+<td>沙箱受限命令仍在宿主执行</td>
+<td>Provider unavailable 时静默透传</td>
+<td>enforcement、runner failure</td>
+</tr>
+<tr>
+<td>并行调用造成随机结果</td>
+<td>错误声明 concurrency safe</td>
+<td>共享资源和模型顺序日志</td>
+</tr>
+<tr>
+<td>工具结果撑爆上下文</td>
+<td>render 无截断/引用策略</td>
+<td>canonical value、spill、ContentBlocks</td>
+</tr>
+<tr>
+<td>回放页面时展示变化</td>
+<td>presentation 读取当前外部状态</td>
+<td>纯投影依赖检查</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">源码路标<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>以下链接固定到提交 <code>47f943859bef60e4160492346772ded9b24f765a</code>：</p>
+<ul>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/tools.md">Tools 子系统：ToolDefinition、schema、限制和执行类型</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/tool-execution-pipeline.md">完整工具执行流水线</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/core/tools/src/index.ts"><code>tools/src/index.ts</code>：注册、执行与策略主线</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/core/tools/src/schema.ts"><code>tools/src/schema.ts</code>：统一 JSON schema DSL</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/packages/core/tools/src/presentation.ts"><code>tools/src/presentation.ts</code>：UI 展示词汇</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/approval.md">用户审批：策略、请求和审计事件</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/permission-presets.md">权限预设</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/sandbox.md">进程沙箱：逐调用策略与强制执行</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/user/develop/basic/tool.md">官方工具开发教程</a></li>
+</ul>
+<h2 id="_5">配套实验<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>先完成 <a href="../../labs/#lab-02">Lab 02：可配置问候工具</a>，验证 schema、规范值、ContentBlock、HMR 和 disposal。随后完成 <a href="../../labs/#lab-04">Lab 04：受控 Data Agent</a>，重点比较：</p>
+<ul>
+<li>任意 SQL 工具与 QuerySpec 工具的错误空间；</li>
+<li>只读账号与业务权限的差异；</li>
+<li>计划变化后旧审批是否失效；</li>
+<li>同一审批能否被重复消费；</li>
+<li>结果是否包含口径、数据新鲜度与限制。</li>
+</ul>
+<h2 id="_6">本章小结<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>工具工程有四个视图：给模型的 schema、给系统的规范 JSON 值、给下一步模型的 ContentBlocks，以及给 UI 的可重放 presentation。把它们混成一段文本，会失去组合、验证和审计能力。</p>
+<p>DSH 工具流水线先物化身份和参数，再经过可扩展 pre 策略、不可放宽的单调 guard、执行包装、输出验证、post 检查、最终内容投影和只读结果观察。审批是一项 fail-closed 且成对记录的决策；沙箱必须由 Provider 实际强制，并区分 partial enforcement、runner failure 和真实 policy denial。</p>
+<p>取消、超时、重试和并行都需要工具作者承担契约。一个成熟工具的完成标准不是 Promise resolve，而是副作用达到可证明终态、结果通过 schema、策略证据闭合、模型与用户看到一致含义。</p>
+<h2 id="_7">思考题<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<ol>
+<li>★ 为什么工具规范值不应直接等于一段给模型看的 Markdown？</li>
+<li>★★ 只读数据库账号为什么仍不能替代指标口径、行列权限和成本限制？</li>
+<li>★★ pre-execute 已经可以 deny，为什么还需要没有 allow 返回值的 monotonic guard？</li>
+<li>★★★ 一个审批凭证应绑定哪些字段，才能防止“批准 A、执行 B”？</li>
+<li>★★ <code>read-only</code> sandbox 为什么不能推导出“该进程无法联网”？</li>
+<li>★★★ 工具超时但下游不支持取消时，怎样避免自动重试造成双重副作用？</li>
+<li>★★ 什么样的工具结果适合并行，为什么“无写操作”仍不足以证明安全？</li>
+<li>★★★ 设计一个搜索工具的 canonical value、模型 render 与 UI presentation，并说明截断证据放在哪里。</li>
+<li>★★ 为什么回放时 <code>presentResult()</code> 不能再次读取外部系统当前状态？</li>
+<li>★★★ 一个组合工具如何安全传播子调用的延迟上下文与 <code>concludeTurn</code>？</li>
+</ol>
+<h2 id="_8">求职面试题<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="_9">基础题<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>解释 ToolSchema、Canonical Value、ContentBlock 和 Presentation 的区别，并说明每层如何测试。</p>
+<h3 id="_10">安全题<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>为“发送企业微信患者随访通知”设计参数、动态风险、审批绑定、敏感数据处理、幂等、取消、重试、审计和 UI 预览。</p>
+<h3 id="_11">架构题<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>设计一个可在本机与远程沙箱执行 Shell 的工具体系。要求说明 Provider seam、逐调用 sandbox policy、partial enforcement、并行分类、取消传播和失败归因。</p>
 
 
 

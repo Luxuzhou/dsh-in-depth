@@ -494,7 +494,7 @@
   <a href="#21-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1 为什么不是一个巨大的 Agent 类
+        2.1 从“万能 Agent 类”开始的架构债务
       
     </span>
   </a>
@@ -502,10 +502,233 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#22-context" class="md-nav__link">
+  <a href="#22" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.2 Context 是能力目录，不是全局变量包
+        2.2 六个核心概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 六个核心概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 插件的最小形态
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Context：能力视图，而不是万能全局对象
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Context：能力视图，而不是万能全局对象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1 三个需要同时回答的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2 根作用域与 Agent 作用域
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Service：稳定接口与动态依赖
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Service：稳定接口与动态依赖">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-inject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1 inject 是依赖图，不是加载顺序
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.2 必需依赖与可选依赖
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-fiber" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Fiber：插件实例的状态机
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Fiber：插件实例的状态机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-pending" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.1 为什么静默 PENDING 是合理设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Effect：把资源所有权写进代码
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 Effect：把资源所有权写进代码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#261" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6.1 拆除顺序的陷阱
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#262" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6.2 失败加载也需要回卷
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Event：广播事实还是共同决策
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.7 Event：广播事实还是共同决策">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#271-sessionevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7.1 为什么 session/event 应是广播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#272-waterfall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7.2 Waterfall 的控制权
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#273-serviceevent-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7.3 如何选择 Service、Event 或 Registry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-isolate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 Isolate 与作用域：同名服务如何共存
       
     </span>
   </a>
@@ -513,10 +736,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#23-service-definitionproviderconsumer" class="md-nav__link">
+  <a href="#29-hmr" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3 Service Definition、Provider、Consumer
+        2.9 HMR：热替换是生命周期测试，不只是开发体验
       
     </span>
   </a>
@@ -524,10 +747,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#24" class="md-nav__link">
+  <a href="#210-cordis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4 事件的四种分发语义
+        2.10 能力接缝在 Cordis 中如何落地
       
     </span>
   </a>
@@ -535,10 +758,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#25" class="md-nav__link">
+  <a href="#211" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.5 注册即副作用，卸载必须可逆
+        2.11 设计新能力的决策流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.11 设计新能力的决策流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11.1 反例：把数据库连接直接塞进工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.12 失败模式与诊断矩阵
       
     </span>
   </a>
@@ -546,10 +797,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#26" class="md-nav__link">
+  <a href="#213" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.6 如何决定扩展位置
+        2.13 初学者容易形成的三个误解
       
     </span>
   </a>
@@ -608,6 +859,45 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="求职面试题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基础题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        源码题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        系统设计题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1328,7 +1618,7 @@
   <a href="#21-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1 为什么不是一个巨大的 Agent 类
+        2.1 从“万能 Agent 类”开始的架构债务
       
     </span>
   </a>
@@ -1336,10 +1626,233 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#22-context" class="md-nav__link">
+  <a href="#22" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.2 Context 是能力目录，不是全局变量包
+        2.2 六个核心概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 六个核心概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 插件的最小形态
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Context：能力视图，而不是万能全局对象
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Context：能力视图，而不是万能全局对象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1 三个需要同时回答的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2 根作用域与 Agent 作用域
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Service：稳定接口与动态依赖
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Service：稳定接口与动态依赖">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-inject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1 inject 是依赖图，不是加载顺序
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.2 必需依赖与可选依赖
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-fiber" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Fiber：插件实例的状态机
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Fiber：插件实例的状态机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-pending" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.1 为什么静默 PENDING 是合理设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Effect：把资源所有权写进代码
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 Effect：把资源所有权写进代码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#261" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6.1 拆除顺序的陷阱
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#262" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6.2 失败加载也需要回卷
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Event：广播事实还是共同决策
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.7 Event：广播事实还是共同决策">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#271-sessionevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7.1 为什么 session/event 应是广播
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#272-waterfall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7.2 Waterfall 的控制权
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#273-serviceevent-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7.3 如何选择 Service、Event 或 Registry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-isolate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 Isolate 与作用域：同名服务如何共存
       
     </span>
   </a>
@@ -1347,10 +1860,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#23-service-definitionproviderconsumer" class="md-nav__link">
+  <a href="#29-hmr" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3 Service Definition、Provider、Consumer
+        2.9 HMR：热替换是生命周期测试，不只是开发体验
       
     </span>
   </a>
@@ -1358,10 +1871,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#24" class="md-nav__link">
+  <a href="#210-cordis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4 事件的四种分发语义
+        2.10 能力接缝在 Cordis 中如何落地
       
     </span>
   </a>
@@ -1369,10 +1882,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#25" class="md-nav__link">
+  <a href="#211" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.5 注册即副作用，卸载必须可逆
+        2.11 设计新能力的决策流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.11 设计新能力的决策流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11.1 反例：把数据库连接直接塞进工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.12 失败模式与诊断矩阵
       
     </span>
   </a>
@@ -1380,10 +1921,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#26" class="md-nav__link">
+  <a href="#213" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.6 如何决定扩展位置
+        2.13 初学者容易形成的三个误解
       
     </span>
   </a>
@@ -1443,6 +1984,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="求职面试题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基础题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        源码题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        系统设计题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1470,101 +2050,513 @@
   
 
 
-<h1 id="2-cordis">第2章 Cordis 微内核与插件树<a class="headerlink" href="#2-cordis" title="Permanent link">&para;</a></h1>
+<h1 id="2-cordis">第 2 章　Cordis 微内核：依赖、作用域与可逆生命周期<a class="headerlink" href="#2-cordis" title="Permanent link">&para;</a></h1>
+<p>第 1 章把 DSH 描述为一棵插件树。本章继续追问：为什么工具、模型适配器、会话甚至 Agent Loop 都能成为插件，而系统不会退化成一堆互相覆盖的脚本？答案不在“插件”这个文件组织形式，而在 Cordis 为插件规定的三种纪律：<strong>依赖必须显式，能力必须有作用域，副作用必须可撤销。</strong></p>
+<blockquote>
+<p><strong>阅读提示</strong>：本章关注 DSH 的组合基础，不急着讨论模型怎样循环。建议把 Cordis 想成 Agent Runtime 的微内核：它不实现所有能力，而是定义能力怎样被提供、发现、通信和卸载。</p>
+</blockquote>
 <h2 id="_1">学习目标<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>理解插件、Context、Service、依赖注入、事件和可逆副作用，并能判断一项新功能应当注册在哪里。</p>
-<h2 id="21-agent">2.1 为什么不是一个巨大的 Agent 类<a class="headerlink" href="#21-agent" title="Permanent link">&para;</a></h2>
-<p>如果所有能力都写进一个 Agent 类，模型、工具、存储、UI和沙箱会形成互相引用。任何替换都需要修改核心循环，测试也难以隔离。Cordis选择让插件向共享Context贡献服务和事件，消费者通过稳定的服务键寻找能力，而不是导入某个具体实现。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Context</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@deepseek-ai/cordis&#39;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;example-plugin&#39;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">inject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;tools&#39;</span><span class="p">]</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">apply</span><span class="p">(</span><span class="nx">ctx</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="c1">// required services are ready here</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">}</span>
-</code></pre></div>
-<p>最小插件只是一个带 <code>apply(ctx)</code> 的模块。<code>inject</code> 声明它依赖哪些服务；Cordis等待依赖就绪后再挂载插件。</p>
-<h2 id="22-context">2.2 Context 是能力目录，不是全局变量包<a class="headerlink" href="#22-context" title="Permanent link">&para;</a></h2>
-<p><code>ctx.tools</code>、<code>ctx.llm</code>、<code>ctx.sessions</code>等键提供稳定访问点。它们看起来像全局对象，但Context可以派生作用域，因此同一进程中的不同Agent可以看到不同工具或Provider。正确问题不是“我能否从ctx拿到服务”，而是“该服务应当对哪个作用域可见”。</p>
-<h2 id="23-service-definitionproviderconsumer">2.3 Service Definition、Provider、Consumer<a class="headerlink" href="#23-service-definitionproviderconsumer" title="Permanent link">&para;</a></h2>
-<p>DSH把一项可替换能力称为 capability seam，完整设计包含三种角色：</p>
+<p>完成本章后，你应当能够：</p>
 <ol>
-<li><strong>Service Definition</strong>声明调用者依赖的接口；</li>
-<li><strong>Service Provider</strong>提供本地、远程或沙箱实现；</li>
-<li><strong>Consumer</strong>把能力转成工具、界面或其他业务行为。</li>
+<li>解释为什么“共享 Context”不等于“全局变量容器”；</li>
+<li>区分 Plugin、Service、Event、Effect、Fiber 和 Registry；</li>
+<li>画出一个插件从 PENDING 到 ACTIVE 再到 DISPOSED 的状态变化；</li>
+<li>为服务直调、广播事件、waterfall 拦截和注册表扩展选择正确机制；</li>
+<li>解释服务消失时依赖插件为什么也要卸载；</li>
+<li>诊断重复工具、幽灵监听器、插件静默不加载和作用域泄漏。</li>
 </ol>
-<p>例如文件系统能力可以由本机Provider或远程沙箱Provider实现，Shell、LSP等消费者仍然面向同一服务。当替换Provider时，能力整体迁移，而不是每个工具分别改造。</p>
-<h2 id="24">2.4 事件的四种分发语义<a class="headerlink" href="#24" title="Permanent link">&para;</a></h2>
+<h2 id="21-agent">2.1 从“万能 Agent 类”开始的架构债务<a class="headerlink" href="#21-agent" title="Permanent link">&para;</a></h2>
+<p>一个 Agent 原型很容易写成下面这样：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Agent</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">DeepSeekClient</span><span class="p">()</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">tools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ToolRegistry</span><span class="p">()</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">database</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">openDatabase</span><span class="p">()</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nx">browser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">launchBrowser</span><span class="p">()</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="k">async</span><span class="w"> </span><span class="nx">run</span><span class="p">(</span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="c1">// 构造上下文、请求模型、执行工具、写日志、推送 UI……</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
+</code></pre></div>
+<p>它在第一周通常很高效，但需求增加后会出现连锁问题：</p>
+<ul>
+<li>测试一个工具也要启动模型、数据库和浏览器；</li>
+<li>本地文件系统换成远程沙箱，需要修改多个消费者；</li>
+<li>Web 与 Headless 为启动顺序各维护一份代码；</li>
+<li>热更新工具时，旧监听器和定时器仍然存活；</li>
+<li>同一进程无法让两个 Agent 使用不同权限或 Provider；</li>
+<li>第三方扩展只能修改中央类，升级时不断产生冲突。</li>
+</ul>
+<p>真正的问题不是类太长，而是<strong>能力发现、依赖顺序、资源所有权和替换边界都隐含在普通代码里</strong>。Cordis 把这些关系提升为运行时可管理的结构。</p>
+<div class="mermaid">flowchart LR
+    subgraph Monolith[隐式耦合的中央对象]
+      A[Agent] --&gt; M[Model]
+      A --&gt; T[Tools]
+      A --&gt; S[Session]
+      A --&gt; U[UI]
+      T --&gt; F[FS]
+      T --&gt; D[DB]
+    end
+    subgraph Cordis[显式依赖的插件图]
+      P1[Model Provider] --&gt; C1[ctx.llm]
+      P2[Tool Registry] --&gt; C2[ctx.tools]
+      P3[Session Store] --&gt; C3[ctx.sessions]
+      X[Agent Loop] --&gt; C1
+      X --&gt; C2
+      X --&gt; C3
+    end</div>
+<p>右图仍然有依赖，但依赖面向稳定服务键，且归 Cordis 生命周期管理。微内核并没有消灭复杂度；它让复杂度从不可见的引用关系，变成可以检查和替换的图。</p>
+<h2 id="22">2.2 六个核心概念<a class="headerlink" href="#22" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>一句话定义</th>
+<th>典型问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plugin</strong></td>
+<td>向当前 Context 贡献行为的装载单元</td>
+<td>“这段能力何时挂载？”</td>
+</tr>
+<tr>
+<td><strong>Context</strong></td>
+<td>带作用域的服务与事件视图</td>
+<td>“这个插件能看到哪些能力？”</td>
+</tr>
+<tr>
+<td><strong>Service</strong></td>
+<td>其他插件通过稳定 <code>ctx.&lt;key&gt;</code> 调用的具名能力</td>
+<td>“谁拥有这项直接调用接口？”</td>
+</tr>
+<tr>
+<td><strong>Event</strong></td>
+<td>生产方与未知监听者之间的类型化通信契约</td>
+<td>“谁需要观察或拦截这个动作？”</td>
+</tr>
+<tr>
+<td><strong>Effect</strong></td>
+<td>与插件生命周期绑定、卸载时可回卷的副作用</td>
+<td>“资源由谁负责释放？”</td>
+</tr>
+<tr>
+<td><strong>Fiber</strong></td>
+<td>一个已挂载插件实例的运行时句柄与状态机</td>
+<td>“插件为何还在等待或已经失败？”</td>
+</tr>
+</tbody>
+</table>
+<p>这些概念不是同义词。一个 Service 类本身可以作为 Plugin 挂载；它在挂载后向 Context 提供一个服务；服务又可能发出 Event；注册服务、监听事件和打开连接都属于 Effect；这一整个插件实例由 Fiber 表示。</p>
+<h3 id="221">2.2.1 插件的最小形态<a class="headerlink" href="#221" title="Permanent link">&para;</a></h3>
+<p>函数或带 <code>apply(ctx)</code> 的对象都可以成为插件。DSH 插件常见写法是：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Context</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@deepseek-ai/cordis&#39;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;example-consumer&#39;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">inject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;tools&#39;</span><span class="p">]</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">apply</span><span class="p">(</span><span class="nx">ctx</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="c1">// 进入这里时，required service 已经可用。</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>inject</code> 不是给 TypeScript 看的一句文档，而是运行时依赖声明。所需服务不存在时，插件保持 PENDING；服务出现后它才加载。插件已经 ACTIVE 后，如果必需服务消失，它也会被卸载，并在服务恢复时重新加载。</p>
+<p>这一点与常见的“启动时检查一次依赖”不同。Cordis 维护的是<strong>持续成立的依赖关系</strong>，不是一次性初始化顺序。</p>
+<h2 id="23-context">2.3 Context：能力视图，而不是万能全局对象<a class="headerlink" href="#23-context" title="Permanent link">&para;</a></h2>
+<p><code>ctx.tools</code>、<code>ctx.llm</code>、<code>ctx.sessions</code> 看起来像全局属性，容易产生误解：“既然所有插件都拿同一个 ctx，那不还是 Service Locator？”关键差异是 Context 可以派生、隔离和限定注册范围。</p>
+<p>可以把 Context 理解成一副“能力眼镜”：插件只能通过自己拿到的 Context 看见当前作用域允许的服务、事件和 effect 所有权。两个 Agent 即使位于同一进程，也可以因上下文不同而拥有不同工具集或 Provider。</p>
+<h3 id="231">2.3.1 三个需要同时回答的问题<a class="headerlink" href="#231" title="Permanent link">&para;</a></h3>
+<p>每次在 Context 上注册能力前，应同时回答：</p>
+<ol>
+<li><strong>名字是什么？</strong> 例如 <code>tools</code>、<code>fs</code>、<code>sessions</code>；服务名位于扁平命名空间，应避免冲突。</li>
+<li><strong>谁能看见？</strong> 是根 Context、某个 isolate realm，还是单个 Agent scope？</li>
+<li><strong>谁拥有生命周期？</strong> 注册应随哪个插件或 Fiber 卸载？</li>
+</ol>
+<p>只回答第一个问题，会得到“能跑但会泄漏”的插件；只回答前两个问题，会在热重载时残留资源；只考虑生命周期而忽略作用域，则可能把敏感工具暴露给错误 Agent。</p>
+<h3 id="232-agent">2.3.2 根作用域与 Agent 作用域<a class="headerlink" href="#232-agent" title="Permanent link">&para;</a></h3>
+<p>根作用域适合全局基础设施，例如公共配置服务或进程级遥测；Agent 作用域适合每会话能力，例如特定工作区、权限集和工具注册。若一个工具只应对某个 Agent 可见，却注册在根 Context，它可能进入其他会话的工具 schema。</p>
+<div class="mermaid">flowchart TB
+    Root[Root Context&lt;br/&gt;共享基础服务]
+    Root --&gt; A[Agent A Context&lt;br/&gt;工作区 A / 只读工具]
+    Root --&gt; B[Agent B Context&lt;br/&gt;工作区 B / 可写工具]
+    A --&gt; PA[Scoped registrations A]
+    B --&gt; PB[Scoped registrations B]</div>
+<p>作用域不是简单的对象拷贝。DSH 的 scope 子系统还要确保事件分发和注册归属与 Agent 对齐，因此“从根 ctx 缓存一个服务引用，再带进子 Agent”可能绕过预期隔离。正确做法是让消费者通过自己的作用域获取能力。</p>
+<h2 id="24-service">2.4 Service：稳定接口与动态依赖<a class="headerlink" href="#24-service" title="Permanent link">&para;</a></h2>
+<p>Service 适合“一个消费者明确调用一个能力所有者”的关系，例如 Agent Loop 调用 LLM 注册表，文件工具调用 <code>ctx.fs</code>。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Service</span><span class="p">,</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">Context</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@deepseek-ai/cordis&#39;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kr">declare</span><span class="w"> </span><span class="nx">module</span><span class="w"> </span><span class="s1">&#39;@deepseek-ai/cordis&#39;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="kd">interface</span><span class="w"> </span><span class="nx">Context</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nx">greeter</span><span class="o">:</span><span class="w"> </span><span class="kt">GreeterService</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">GreeterService</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Service</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">ctx</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="k">super</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;greeter&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">`</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
+</code></pre></div>
+<p>这里有两个不同层面的动作：</p>
+<ul>
+<li><code>declare module</code> 通过 TypeScript 声明合并提供编译期类型，不生成运行时代码；</li>
+<li><code>super(ctx, 'greeter')</code> 在运行时占据服务键，并把注册绑定到生命周期。</li>
+</ul>
+<p>如果只有声明合并，没有 Provider，消费者仍会 PENDING；如果只有运行时注册，没有类型声明，服务可能工作，但跨包调用失去类型保护。</p>
+<h3 id="241-inject">2.4.1 <code>inject</code> 是依赖图，不是加载顺序<a class="headerlink" href="#241-inject" title="Permanent link">&para;</a></h3>
+<p>假设消费者声明 <code>inject = ['greeter']</code>。无论配置文件中消费者写在 Provider 前面还是后面，只要 Provider 最终出现，Cordis 都可以按依赖使其进入 ACTIVE。若 Provider 被 HMR 替换：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>旧 Provider 卸载
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  → greeter 服务消失
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  → 依赖 greeter 的 Consumer 卸载
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  → 旧 Consumer effects 回卷
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  → 新 Provider 注册 greeter
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  → Consumer 重新加载并绑定新实现
+</code></pre></div>
+<p>这比让 Consumer 永久持有旧对象引用安全，因为服务消失时，依赖者不会继续对一个已释放资源发请求。</p>
+<h3 id="242">2.4.2 必需依赖与可选依赖<a class="headerlink" href="#242" title="Permanent link">&para;</a></h3>
+<p>必需依赖放进 <code>inject</code>；缺失后功能仍有意义的能力应在使用点探测，例如 <code>ctx.get('optionalService')</code>。不要把真正必需的依赖伪装成 optional，再在深层代码抛出“undefined”；也不要把可选的展示增强写成 required，导致核心能力永远 PENDING。</p>
+<h2 id="25-fiber">2.5 Fiber：插件实例的状态机<a class="headerlink" href="#25-fiber" title="Permanent link">&para;</a></h2>
+<p>每个挂载实例由一个 Fiber 表示：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>PENDING → LOADING → ACTIVE → UNLOADING → DISPOSED
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                 ↘ FAILED
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+<th>常见诊断方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PENDING</td>
+<td>已声明，但必需服务尚未满足</td>
+<td>检查 <code>inject</code>、Provider、isolate 和配置层</td>
+</tr>
+<tr>
+<td>LOADING</td>
+<td>正在执行 <code>apply</code> 和建立 effects</td>
+<td>检查长时间初始化与未决 Promise</td>
+</tr>
+<tr>
+<td>ACTIVE</td>
+<td>插件及其 effects 已生效</td>
+<td>检查注册的作用域和数量</td>
+</tr>
+<tr>
+<td>FAILED</td>
+<td>配置校验或加载抛错</td>
+<td>检查错误链和部分资源是否由 effect 承担</td>
+</tr>
+<tr>
+<td>UNLOADING</td>
+<td>正在运行 disposer</td>
+<td>检查异步清理、超时和依赖顺序</td>
+</tr>
+<tr>
+<td>DISPOSED</td>
+<td>已完成拆除</td>
+<td>确认没有外部孤儿资源</td>
+</tr>
+</tbody>
+</table>
+<p>PENDING 是合法状态，不一定记录成错误。Provider 可能稍后挂载；若进程中也没有其他活跃资源，程序甚至可能以状态码 0 静默退出。因此“插件没有任何输出”时，先看 Fiber 状态，而不是立刻怀疑 <code>apply()</code> 没被调用。</p>
+<h3 id="251-pending">2.5.1 为什么静默 PENDING 是合理设计<a class="headerlink" href="#251-pending" title="Permanent link">&para;</a></h3>
+<p>在动态组合系统中，依赖暂时缺失并不总是异常。配置热更新可能先卸载旧 Provider，再挂载新 Provider；若 PENDING 直接抛错，合法替换会变成故障。代价是运维侧必须提供诊断视图，区分“有意等待”与“长期缺失”。</p>
+<p>生产监控可以设置宽限期：短暂 PENDING 只记录状态，超过阈值仍未满足则告警，并列出缺失服务及配置来源。</p>
+<h2 id="26-effect">2.6 Effect：把资源所有权写进代码<a class="headerlink" href="#26-effect" title="Permanent link">&para;</a></h2>
+<p>插件会产生两类副作用：</p>
+<ul>
+<li>Cordis 已管理的注册，如 <code>ctx.on()</code>、<code>ctx.plugin()</code>、Service 注册以及 DSH 注册表返回的 disposer；</li>
+<li>框架不知道的外部资源，如定时器、文件 watcher、数据库连接、端口和子进程。</li>
+</ul>
+<p>第二类必须包装在 <code>ctx.effect()</code> 中：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">apply</span><span class="p">(</span><span class="nx">ctx</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">ctx</span><span class="p">.</span><span class="nx">effect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">timer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(</span><span class="nx">refresh</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="nx">_000</span><span class="p">)</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">clearInterval</span><span class="p">(</span><span class="nx">timer</span><span class="p">)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="p">})</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>effect 主体在加载时取得资源，返回的 disposer 在卸载时释放资源。通常不应由业务代码手动调用这个 disposer；资源所有权属于插件生命周期。</p>
+<h3 id="261">2.6.1 拆除顺序的陷阱<a class="headerlink" href="#261" title="Permanent link">&para;</a></h3>
+<p>disposer 按 effect 注册顺序的逆序启动，但多个异步 disposer 可能并发。如果“先停止接收请求，再等待在途任务，最后关闭数据库”必须严格排序，应把三步放在同一个 disposer 中并依次 <code>await</code>，不能寄希望于多个独立 effect 自然按顺序完成。</p>
+<h3 id="262">2.6.2 失败加载也需要回卷<a class="headerlink" href="#262" title="Permanent link">&para;</a></h3>
+<p><code>apply()</code> 执行到一半后抛错，前面已经建立的 effects 也不能残留。把资源获取放进 effect，可以让失败路径和正常卸载共享清理逻辑。否则开发时偶发的一次配置错误，可能留下端口占用、重复 watcher 或未关闭连接。</p>
+<h2 id="27-event">2.7 Event：广播事实还是共同决策<a class="headerlink" href="#27-event" title="Permanent link">&para;</a></h2>
+<p>Service 适合明确调用；Event 适合生产方不知道所有消费者，或需要多个插件共同观察、包装和决策的场景。Cordis 的分发模式是事件契约的一部分：</p>
 <table>
 <thead>
 <tr>
 <th>模式</th>
-<th>用途</th>
-<th>心智模型</th>
+<th>调用方式</th>
+<th style="text-align: right;">是否等待</th>
+<th>返回语义</th>
+<th>适合场景</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>emit</code></td>
-<td>广播事实</td>
-<td>多个观察者独立接收</td>
-</tr>
-<tr>
-<td><code>waterfall</code></td>
-<td>包装或改写一次操作</td>
-<td>必须调用 <code>next()</code> 才继续</td>
+<td><code>ctx.emit()</code></td>
+<td style="text-align: right;">否</td>
+<td>无</td>
+<td>已提交事实广播</td>
 </tr>
 <tr>
 <td><code>parallel</code></td>
-<td>并行等待多个处理器</td>
-<td>所有结果共同完成</td>
+<td><code>await ctx.parallel()</code></td>
+<td style="text-align: right;">是</td>
+<td>等全部完成</td>
+<td>并行 flush、多个独立检查</td>
 </tr>
 <tr>
 <td><code>serial</code></td>
-<td>有序执行检查点</td>
-<td>一个接一个完成</td>
+<td><code>await ctx.serial()</code></td>
+<td style="text-align: right;">是</td>
+<td>首个有效结果胜出</td>
+<td>有序候选决策</td>
+</tr>
+<tr>
+<td><code>bail</code></td>
+<td><code>ctx.bail()</code></td>
+<td style="text-align: right;">否</td>
+<td>serial 的同步版本</td>
+<td>同步短路查询</td>
+</tr>
+<tr>
+<td><code>waterfall</code></td>
+<td><code>ctx.waterfall()</code></td>
+<td style="text-align: right;">依契约</td>
+<td>层层包装或短路</td>
+<td>请求、审批、工具策略</td>
 </tr>
 </tbody>
 </table>
-<p>工具执行前策略适合waterfall，因为插件可以允许、拒绝或请求审批；会话事件广播适合emit，因为日志事实不应被监听者否决。</p>
-<h2 id="25">2.5 注册即副作用，卸载必须可逆<a class="headerlink" href="#25" title="Permanent link">&para;</a></h2>
-<p>插件可能注册工具、监听事件、启动定时器或打开连接。DSH要求这些注册成为Cordis effect，使热重载和卸载能够撤销旧行为。框架管理的 <code>ctx.on()</code>、注册表返回的disposer和 <code>ctx.effect()</code> 都服务于这一目标。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">apply</span><span class="p">(</span><span class="nx">ctx</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">ctx</span><span class="p">.</span><span class="nx">effect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">timer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;tick&#39;</span><span class="p">),</span><span class="w"> </span><span class="mf">5</span><span class="nx">_000</span><span class="p">)</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">clearInterval</span><span class="p">(</span><span class="nx">timer</span><span class="p">)</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="p">})</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+<h3 id="271-sessionevent">2.7.1 为什么 <code>session/event</code> 应是广播<a class="headerlink" href="#271-sessionevent" title="Permanent link">&para;</a></h3>
+<p>会话事件已经提交到日志后，观察者可以更新 UI、遥测或持久化缓冲，但不应由某个监听器“否决事实曾发生”。因此它采用 post-commit、fire-and-forget 的观察语义；监听器失败应被隔离，不能把已经提交的 append 回滚成未知状态。</p>
+<h3 id="272-waterfall">2.7.2 Waterfall 的控制权<a class="headerlink" href="#272-waterfall" title="Permanent link">&para;</a></h3>
+<p>waterfall 监听器会收到 <code>next()</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">ctx</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;demo/transform&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">(</span><span class="nx">request</span><span class="p">,</span><span class="w"> </span><span class="nx">next</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mustReject</span><span class="p">(</span><span class="nx">request</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">kind</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;reject&#39;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">next</span><span class="p">()</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">annotate</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">})</span>
 </code></pre></div>
-<p>如果插件重载后出现重复工具、重复事件或孤儿进程，首先检查副作用是否真正归属插件生命周期。</p>
-<h2 id="26">2.6 如何决定扩展位置<a class="headerlink" href="#26" title="Permanent link">&para;</a></h2>
+<p>调用 <code>next()</code> 是委托给下游；不调用并直接返回是有意短路。只做日志或标注的监听器如果忘记 <code>next()</code>，可能悄无声息地吞掉默认执行。这是 Cordis 插件最危险、也最常见的逻辑错误之一。</p>
+<h3 id="273-serviceevent-registry">2.7.3 如何选择 Service、Event 或 Registry<a class="headerlink" href="#273-serviceevent-registry" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>需求</th>
+<th>推荐机制</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>调用一个明确能力所有者</td>
+<td>Service</td>
+<td>接口直接、返回值清楚</td>
+</tr>
+<tr>
+<td>通知多个未知观察者</td>
+<td>emit Event</td>
+<td>生产方无需知道订阅者</td>
+</tr>
+<tr>
+<td>多策略共同包装一次动作</td>
+<td>waterfall Event</td>
+<td>支持委托、改写和否决</td>
+</tr>
+<tr>
+<td>多个同类实现供调用者选择</td>
+<td>Registry Service</td>
+<td>需要枚举、作用域和稳定注册</td>
+</tr>
+<tr>
+<td>保存可重放事实</td>
+<td>SessionEvent</td>
+<td>需要序列、持久化和投影契约</td>
+</tr>
+</tbody>
+</table>
+<p>不要为了“解耦”把所有调用都改成 Event。若调用者需要一个明确返回值和错误语义，Service 往往更可读；若一个 Service 内部需要可扩展策略，再在服务边界发出事件。</p>
+<h2 id="28-isolate">2.8 Isolate 与作用域：同名服务如何共存<a class="headerlink" href="#28-isolate" title="Permanent link">&para;</a></h2>
+<p>Cordis 的服务名位于扁平命名空间，但 isolate realm 可以让不同子树各自拥有同名服务实例。例如两个 Agent 组可以分别配置本地 Shell 与远程 Shell，而消费者都注入 <code>shell</code>。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Root
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>├── Group A [isolate: shell]
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>│   ├── LocalShell Provider
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>│   └── Bash Tool Consumer → Group A shell
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>└── Group B [isolate: shell]
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    ├── RemoteShell Provider
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    └── Bash Tool Consumer → Group B shell
+</code></pre></div>
+<p>隔离的目的不是复制一切，而是隔离需要变化的服务名。隔离层次过粗会制造重复基础设施，过细则让一个能力所需的 Provider 不在同一 realm，导致插件长期 PENDING。</p>
+<p>DSH 的 Agent preset 需要为每会话组合能力时，服务行通常还要处在合适的 isolate realm。判断错误的典型症状是：根 Context 明明存在 Provider，但 Agent-scoped Consumer 仍看不到它，或者多个 Agent 意外共享同一个有状态实例。</p>
+<h2 id="29-hmr">2.9 HMR：热替换是生命周期测试，不只是开发体验<a class="headerlink" href="#29-hmr" title="Permanent link">&para;</a></h2>
+<p>配置项有稳定 <code>id</code> 时，Loader 可以区分“修改现有行”与“删除旧行再新增一行”。HMR 的核心流程是：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>检测文件或配置变化
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  → 找到受影响的配置行
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  → 卸载旧 Fiber 与子插件
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  → 回卷全部 effects
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  → 重新校验配置
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  → 按依赖加载新 Fiber
+</code></pre></div>
+<p>如果配置项没有稳定 <code>id</code>，每次读取可能获得新 ID，导致无关编辑也触发不必要的重新挂载。若 disposer 不完整，HMR 会迅速暴露重复工具、重复事件和内存增长。</p>
+<p>这使热重载成为很好的架构测试：能被连续重载十次且注册数量保持恒定，说明资源所有权大概率清晰；只能靠重启进程恢复，通常意味着生命周期没有闭合。</p>
+<h2 id="210-cordis">2.10 能力接缝在 Cordis 中如何落地<a class="headerlink" href="#210-cordis" title="Permanent link">&para;</a></h2>
+<p>第 1 章介绍了 Definition、Provider、Consumer。Cordis 为三者提供具体机制：</p>
+<div class="mermaid">flowchart LR
+    Def[Definition&lt;br/&gt;Context 类型 + Service 接口] --&gt; Key[稳定 ctx key]
+    Provider[Provider Plugin&lt;br/&gt;Service 实现] --&gt; Key
+    Consumer[Consumer Plugin&lt;br/&gt;inject + 调用] --&gt; Key
+    Hooks[Policy Plugins] -.events.-&gt; Consumer
+    Life[Effects / Fiber] -.生命周期.-&gt; Provider
+    Life -.生命周期.-&gt; Consumer</div>
+<p>以远程代码执行为例：</p>
 <ul>
-<li>新增模型可调用动作：注册工具；</li>
-<li>替换存储或执行环境：提供新的Service Provider；</li>
-<li>拦截工具或模型请求：监听对应waterfall事件；</li>
-<li>保存重启后仍需存在的事实：扩展会话事件；</li>
-<li>只改变一个Agent的能力：在Agent作用域挂载；</li>
-<li>提供一套可安装组合：制作Bundle，而不是修改Agent Loop。</li>
+<li>Definition 声明 <code>ctx.fs</code>、<code>ctx.subprocess</code> 或更高层执行接口；</li>
+<li>本地 Provider 使用宿主文件和进程；远程 Provider 使用沙箱 API；</li>
+<li>Bash、PTY、LSP 和文件工具是 Consumer；</li>
+<li>policy 事件限制路径、命令和资源；</li>
+<li>effects 确保沙箱会话、连接和注册随作用域释放。</li>
 </ul>
+<p>一个好的接缝让替换发生在共享 execution world，而不是给每个工具写一个远程分支。一个不完整接缝则会让文件在远程、Shell 在本地，模型看到两个互不一致的世界。</p>
+<h2 id="211">2.11 设计新能力的决策流程<a class="headerlink" href="#211" title="Permanent link">&para;</a></h2>
+<p>遇到新需求时，可以依次判断：</p>
+<ol>
+<li>这是模型可调用动作吗？若是，可能需要 Tool Consumer，但继续追问底层能力是否应抽成 Service。</li>
+<li>是否存在多个可替换实现？若是，定义稳定 Service 接口与 Provider。</li>
+<li>是否允许其他插件观察或拦截？若是，在能力所有者边界定义正确模式的 Event。</li>
+<li>是否产生外部资源？若是，明确 effect 和 disposer。</li>
+<li>能力对谁可见？选择根、isolate 或 Agent scope。</li>
+<li>事实是否必须跨重启存在？若是，不能只发实时 Event，需要持久事件或外部存储。</li>
+<li>是否需要以组合形式交付？运行插件之外再设计 Bundle 与配置行。</li>
+</ol>
+<h3 id="2111">2.11.1 反例：把数据库连接直接塞进工具<a class="headerlink" href="#2111" title="Permanent link">&para;</a></h3>
+<p>若每个查询工具都自行读取环境变量、建立数据库连接并执行 SQL，会导致连接池重复、凭据策略分散、测试困难。更合理的拆分是：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Database Service Definition
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  ← Local/Cloud/Test Providers
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  ← Query Tool Consumers
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  ← Health/Telemetry Consumers
+</code></pre></div>
+<p>工具负责模型接口和业务参数，Provider 负责连接、凭据、超时和资源生命周期。这样测试工具时可以替换为内存 Provider，生产部署也能统一轮换凭据。</p>
+<h2 id="212">2.12 失败模式与诊断矩阵<a class="headerlink" href="#212" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>表象</th>
+<th>可能根因</th>
+<th>首先检查</th>
+<th>修复方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>插件完全没输出，进程正常退出</td>
+<td>required service 缺失，Fiber 长期 PENDING</td>
+<td>Fiber state、<code>inject</code>、有效配置</td>
+<td>加载 Provider 或修正 realm</td>
+</tr>
+<tr>
+<td>HMR 后工具出现两份</td>
+<td>注册未绑定 effect，或 disposer 未执行</td>
+<td>注册数量、Fiber 卸载日志</td>
+<td>使用框架注册 API 或 <code>ctx.effect()</code></td>
+</tr>
+<tr>
+<td>Provider 卸载后消费者仍调用旧对象</td>
+<td>直接导入/缓存实现，绕过 <code>inject</code></td>
+<td>import 与长期闭包引用</td>
+<td>面向 Context 服务并让依赖重载</td>
+</tr>
+<tr>
+<td>日志插件装上后模型请求消失</td>
+<td>waterfall 监听器忘记 <code>next()</code></td>
+<td>监听器返回路径</td>
+<td>观察型监听器始终委托</td>
+</tr>
+<tr>
+<td>两个 Agent 看见彼此工具</td>
+<td>注册落在根 Context，缺少 scope/isolate</td>
+<td>tool schema 与注册所属 Fiber</td>
+<td>在 Agent scope 注册并写隔离测试</td>
+</tr>
+<tr>
+<td>卸载一直卡住</td>
+<td>disposer 未完成、等待已无法结束的任务</td>
+<td>UNLOADING Fiber、开放句柄</td>
+<td>传播取消并给清理设置边界</td>
+</tr>
+<tr>
+<td>服务类型匹配但替换后行为错误</td>
+<td>契约只描述类型，未约定语义</td>
+<td>Provider 契约测试</td>
+<td>补充错误、并发、取消和一致性约定</td>
+</tr>
+<tr>
+<td>配置改一行引发大面积重载</td>
+<td>缺少稳定配置 ID</td>
+<td>Loader diff 与 row id</td>
+<td>为长期配置项设置稳定 ID</td>
+</tr>
+</tbody>
+</table>
+<p>推荐调试顺序是：<strong>有效配置 → Fiber 状态 → 服务可见性 → 作用域 → effect 数量 → 事件控制流</strong>。这比一开始在业务代码中加日志更容易定位组合问题。</p>
+<h2 id="213">2.13 初学者容易形成的三个误解<a class="headerlink" href="#213" title="Permanent link">&para;</a></h2>
+<p><strong>误解一：插件越小越解耦。</strong> 文件小不代表边界好。若十个小插件共享一个隐式全局 Map，它们仍高度耦合。解耦来自稳定契约和明确所有权。</p>
+<p><strong>误解二：事件比直接调用更灵活。</strong> 事件会隐藏调用路径和控制权。只有确实需要未知观察者或协作拦截时才使用事件。</p>
+<p><strong>误解三：卸载只是开发功能。</strong> 在 Profile 切换、Agent scope 结束、Provider 故障恢复和长期 Web 服务中，正确拆除都是生产能力。无法卸载的插件也很难安全升级。</p>
 <h2 id="_2">源码路标<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>以下证据固定到本书上游提交 <code>47f943859bef60e4160492346772ded9b24f765a</code>：</p>
 <ul>
-<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-primer.md">Cordis Primer</a></li>
-<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/capability-seams.md">Capability Seams</a></li>
-<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/user/develop/basic/index.md">官方第一个插件教程</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-primer.md">Cordis Primer：五个核心概念与分发模式</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-tutorial/02-lifecycle-and-effects.md">生命周期与 Effect 教程</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-tutorial/03-services.md">Service 与动态依赖教程</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-tutorial/04-events.md">Event 与 waterfall 教程</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-tutorial/06-composition-and-hmr.md">组合、isolate 与 HMR 教程</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/capability-seams.md">能力接缝与服务图</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/subsystems/scope.md">Agent scope 子系统</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cordis-api/context.md">Cordis Context API</a></li>
 </ul>
 <h2 id="_3">配套实验<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>完成 <a href="../../labs/#lab-02">Lab 02：可配置问候工具</a>，观察插件挂载、工具注册、配置验证和卸载清理。</p>
+<p>完成 <a href="../../labs/#lab-02">Lab 02：可配置问候工具</a>。深度版本不只要求工具返回问候语，还要验证：</p>
+<ol>
+<li>配置 schema 在加载前拒绝非法值；</li>
+<li>Consumer 缺少必需服务时处于 PENDING；</li>
+<li>修改配置后旧工具注册得到释放；</li>
+<li>连续重载不会增加工具与监听器数量；</li>
+<li>将 Provider 替换为测试实现后，Consumer 无需改代码。</li>
+</ol>
 <h2 id="_4">本章小结<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>Cordis的核心价值是把依赖、作用域和生命周期显式化。插件不是任意脚本；成熟插件必须说明它依赖什么、贡献什么以及如何撤销副作用。</p>
+<p>Cordis 的价值不是“允许写插件”，而是把运行时关系结构化。Context 给出带作用域的能力视图，Service 表达稳定直接调用，Event 表达广播或协作决策，Effect 绑定资源所有权，Fiber 则让插件的等待、加载、失败和卸载成为可诊断状态。</p>
+<p>依赖声明持续有效：Provider 消失时 Consumer 也要卸载，Provider 恢复后再重新装配。这个机制与可逆 effect 共同构成 HMR 和 Provider 替换的基础。</p>
+<p>成熟扩展必须同时说明“依赖什么、贡献什么、对谁可见、怎样通信、如何撤销”。只会实现 <code>apply(ctx)</code>，还没有真正掌握插件架构。</p>
 <h2 id="_5">思考题<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ol>
-<li>为什么数据库连接更适合Service Provider，而一个“查询订单”动作更适合工具？</li>
-<li><code>waterfall</code>监听者忘记调用<code>next()</code>会发生什么？</li>
-<li>哪些状态应该属于插件实例，哪些应该进入会话事件？</li>
+<li>★ 数据库连接为什么适合成为 Service Provider，而“查询某订单”为什么更适合成为 Tool Consumer？</li>
+<li>★★ 一个仅用于记录耗时的 waterfall 监听器忘记调用 <code>next()</code> 会产生什么现象？怎样写测试捕获它？</li>
+<li>★★ PENDING 为什么不是异常？生产环境怎样区分短暂等待和配置错误？</li>
+<li>★★ 两个异步 disposer 具有先后依赖时，为什么注册逆序仍不足以保证安全拆除？</li>
+<li>★★★ 设计一个允许本地和远程沙箱切换的 execution world，哪些服务必须一起替换才能避免“文件在 A、进程在 B”？</li>
+<li>★★ 一个插件通过根 Context 读取服务后，把引用传给 Agent-scoped 子插件，可能破坏什么隔离假设？</li>
+<li>★★★ Service 的 TypeScript 接口完全一致时，Provider 仍可能在哪些行为语义上不兼容？如何建立契约测试？</li>
+<li>★★ 如果所有功能都做成 Event 而不使用 Service，调试、类型和错误处理会遇到什么问题？</li>
 </ol>
 <h2 id="_6">求职面试题<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>设计一个可在本机和远程沙箱之间切换的代码执行能力，说明Definition、Provider和Consumer如何拆分。</p>
+<h3 id="_7">基础题<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>请用一个实际例子解释 Plugin、Service、Event、Effect 与 Fiber 的区别，并说明 <code>inject</code> 不只是启动顺序。</p>
+<h3 id="_8">源码题<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>某插件在配置中存在却没有加载。请给出从 <code>--dump-config</code>、Fiber state、服务 realm、<code>inject</code> 到加载错误链的完整诊断过程。</p>
+<h3 id="_9">系统设计题<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>设计一个可在本机、Docker 和远程沙箱之间切换的代码执行能力。说明 Definition、Provider、Consumer、策略事件、Agent scope、资源 disposal 和契约测试怎样分工。</p>
 
 
 
