@@ -11,21 +11,26 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 CHAPTERS = sorted((ROOT / "docs" / "book").glob("ch*.md"))
 REQUIRED_SECTIONS = ("## 学习目标", "## 源码路标", "## 本章小结", "## 思考题", "## 求职面试题")
-CHAPTER_DEPTH_BASELINES = {
-    # Chapter 1 is the quality baseline for the progressive rewrite. These are
-    # regression guards, not a substitute for technical/editorial review.
-    "ch01.md": {
-        "min_characters": 15_000,
-        "min_h2": 15,
-        "min_mermaid": 3,
-        "min_upstream_links": 6,
-        "required_phrases": (
-            "## 配套实验",
-            "失败模式",
-            "能力接缝",
-            "Model-visible means logged",
-        ),
-    },
+# These guards prevent a deep chapter from silently regressing into an outline.
+# They complement rather than replace source review, technical review and labs.
+COMMON_DEPTH_BASELINE = {
+    "min_characters": 10_000,
+    "min_h2": 15,
+    "min_mermaid": 2,
+    "min_upstream_links": 6,
+}
+
+CHAPTER_DEPTH_MARKERS = {
+    "ch01.md": ("失败模式", "能力接缝", "Model-visible means logged"),
+    "ch02.md": ("失败模式", "Fiber", "Effect"),
+    "ch03.md": ("Turn", "Step", "取消"),
+    "ch04.md": ("失败模式", "Model-visible means logged", "投影"),
+    "ch05.md": ("失败模式", "monotonic", "幂等"),
+    "ch06.md": ("失败模式", "Profile", "回滚"),
+    "ch07.md": ("失败模式", "Subagent", "Workflow"),
+    "ch08.md": ("失败模式", "多租户", "Surface"),
+    "ch09.md": ("失败模式", "供应链", "退出"),
+    "ch10.md": ("失败模式", "QuerySpec", "证据包"),
 }
 
 
@@ -43,8 +48,12 @@ def main() -> int:
             if "github.com/deepseek-ai/deepseek-harness" in text:
                 errors.append(f"{chapter.relative_to(ROOT)} has unpinned upstream source links")
 
-        baseline = CHAPTER_DEPTH_BASELINES.get(chapter.name)
-        if baseline:
+        markers = CHAPTER_DEPTH_MARKERS.get(chapter.name)
+        if markers:
+            baseline = dict(COMMON_DEPTH_BASELINE)
+            if chapter.name == "ch01.md":
+                baseline["min_characters"] = 15_000
+                baseline["min_mermaid"] = 3
             if len(text) < baseline["min_characters"]:
                 errors.append(
                     f"{chapter.relative_to(ROOT)} is below depth baseline: "
@@ -68,7 +77,7 @@ def main() -> int:
                     f"{chapter.relative_to(ROOT)} has too few upstream links: "
                     f"{upstream_links} < {baseline['min_upstream_links']}"
                 )
-            for phrase in baseline["required_phrases"]:
+            for phrase in ("## 配套实验", *markers):
                 if phrase not in text:
                     errors.append(
                         f"{chapter.relative_to(ROOT)} misses depth marker: {phrase}"

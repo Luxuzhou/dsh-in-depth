@@ -20,17 +20,21 @@
 
 **难度：★★　状态：代码完成，待在锁定DSH基线上实跑**
 
-实现一个`greet`工具，验证参数Schema、配置默认值、工具调用、模型可见结果和插件热替换。基础代码位于`labs/lab02-greet-tool`。
+实现一个`greet`工具，验证参数Schema、配置默认值、工具调用、模型可见结果和插件热替换；再从 overlay 推进到 Bundle/Profile，检查制品、有效配置和卸载。
 
-验收：有效调用返回配置化问候；缺少`name`被Schema拒绝；非法配置在插件加载阶段失败；重载后工具没有重复注册。
+验收：有效调用返回配置化问候；缺少`name`被Schema拒绝；非法配置不替换最后一个可用实例；三次重载后工具没有重复注册；卸载后工具与配置行消失。
+
+详见 [`labs/lab02-greet-tool/README.md`](https://github.com/luxuzhou/dsh-in-depth/tree/main/labs/lab02-greet-tool)。
 
 ## Lab 03：会话事件观察器 {#lab-03}
 
 **难度：★★　状态：代码完成，待组合测试**
 
-监听`session/event`，只输出事件序号、会话ID和类型，不记录用户正文和工具敏感结果。执行一次工具任务后，将事件序列与第3章生命周期图对照。
+监听`session/event`，只输出结构化标识和类型，不记录用户正文和工具敏感结果。执行自然完成、工具 continuation、pre-step 拒绝和主动取消四条轨迹，再构造重复/截断事件验证投影。
 
-验收：每个打开的turn和step都有对应结束事件；工具call/result能够配对；观察器卸载后停止输出。
+验收：每个打开的turn和step都有对应结束事件；工具call/result能够配对；取消真正收敛；投影可幂等重建；观察器卸载后停止输出。
+
+详见 [`labs/lab03-session-observer/README.md`](https://github.com/luxuzhou/dsh-in-depth/tree/main/labs/lab03-session-observer)。
 
 ## Lab 04：受控 Data Agent {#lab-04}
 
@@ -44,13 +48,35 @@
 python labs/lab04-governed-data-agent/test_mock_data_agent.py
 ```
 
+深度扩展加入租户/会话/状态版本/有效期绑定、并发消费、语义与权限版本失效、结构化失败和HTTP语义服务故障注入。
+
 ## Lab 05：插件审查报告 {#lab-05}
 
-**难度：★★　状态：模板可用**
+**难度：★★★　状态：深度模板可用**
 
-选择一个带`dsh-plugin`主题的社区项目，按照来源、许可证、版本、安装脚本、权限、数据流、失败方式、测试、维护和退出十项形成证据表。结论只能是“进入观察区”“进入实验区”“受控试点”或“拒绝”，不能只写“推荐”。
+选择一个带`dsh-plugin`主题的社区项目，先证明其真实扩展形态，再固定源码和制品，完成能力图、服务端/客户端审查、权限与数据流、动态故障实验、升级和退出。结论使用五级证据状态，不能只写“推荐”。
 
-详见`labs/lab05-plugin-review/REVIEW_TEMPLATE.md`。
+详见 [`labs/lab05-plugin-review/REVIEW_TEMPLATE.md`](https://github.com/luxuzhou/dsh-in-depth/blob/main/labs/lab05-plugin-review/REVIEW_TEMPLATE.md)。
+
+## Lab 06：扩展机制边界消融 {#lab-06}
+
+**难度：★★★　状态：深度实验设计完成**
+
+把同一个质量报告任务分别表达为 Skill、MCP、Workflow/Subagent 和确定性领域服务，固定输入与预算做消融，比较成功率、成本、权限面和错误相关性。
+
+验收：不是“全部机制都用上”，而是用证据指出每种机制的净收益、必须保留的确定性边界和应删除的复杂度。
+
+详见 [`labs/lab06-extension-boundaries/README.md`](https://github.com/luxuzhou/dsh-in-depth/tree/main/labs/lab06-extension-boundaries)。
+
+## Lab 07：三种 Surface 契约对照 {#lab-07}
+
+**难度：★★★　状态：深度实验设计完成**
+
+用 Web、Headless 和 Python SDK 对同一只读仓库执行相同任务，比较有效配置、身份解析、Session 事件、审批/取消、恢复和最终证据；注入断连、重启、重复请求与越权恢复。
+
+验收：核心语义一致，差异能够由 Surface 能力、Profile 或身份策略解释，并形成企业网关、多租户与外置状态的缺口清单。
+
+详见 [`labs/lab07-surface-contracts/README.md`](https://github.com/luxuzhou/dsh-in-depth/tree/main/labs/lab07-surface-contracts)。
 
 ## 实验贡献规则
 
