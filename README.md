@@ -45,6 +45,14 @@ uv run mkdocs serve
 
 打开 `http://127.0.0.1:8000`。不安装依赖也可以直接在 GitHub 阅读 Markdown。
 
+生成单卷Markdown书稿：
+
+```bash
+python scripts/export_book.py
+```
+
+推送`v*`标签后，Release工作流使用同一正文生成Markdown、EPUB和PDF。Windows环境在Actions不可用时可运行`scripts/publish_pages.ps1`手动更新在线站点。
+
 ## 项目原则
 
 1. 以官方源码和官方文档为第一手依据。

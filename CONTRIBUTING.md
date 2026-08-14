@@ -30,6 +30,7 @@
 python scripts/check_content.py
 uv sync --extra docs
 uv run mkdocs build --strict
+python scripts/export_book.py
 ```
 
 不要提交 API Key、数据库口令、患者信息或真实生产数据。

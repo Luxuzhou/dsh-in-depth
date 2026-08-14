@@ -7,4 +7,5 @@
 - 建立十章正文、四个配套实验和求职路线。
 - 固定 DSH 上游基线为 `0.1.0-rc.5` / `47f9438`。
 - 增加 MkDocs 站点、GitHub Pages、上游漂移检查和内容校验。
+- 增加单卷书稿导出、EPUB/PDF Tag Release和手动Pages发布。
 - 增加插件生态审查方法与企业 Data Agent 案例。

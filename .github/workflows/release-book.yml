@@ -1,0 +1,45 @@
+name: release-book
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-lang-chinese fonts-noto-cjk
+      - name: Assemble manuscript
+        run: python scripts/export_book.py
+      - name: Build EPUB
+        run: >-
+          pandoc dist/dsh-in-depth.md
+          --metadata-file=book-metadata.yml
+          --toc --number-sections
+          -o dist/dsh-in-depth.epub
+      - name: Build PDF
+        run: >-
+          pandoc dist/dsh-in-depth.md
+          --metadata-file=book-metadata.yml
+          --toc --number-sections
+          --pdf-engine=xelatex
+          -V CJKmainfont='Noto Sans CJK SC'
+          -V geometry:margin=2.2cm
+          -o dist/dsh-in-depth.pdf
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/dsh-in-depth.md
+            dist/dsh-in-depth.epub
+            dist/dsh-in-depth.pdf
