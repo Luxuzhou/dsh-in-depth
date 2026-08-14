@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/deepseek-ai/deepseek-harness",
+  "branch": "master",
+  "commit": "47f943859bef60e4160492346772ded9b24f765a",
+  "package_version": "0.1.0-rc.5",
+  "snapshot_date": "2026-08-14",
+  "status": "developer-preview",
+  "update_policy": "Update through a dedicated pull request with compatibility notes and lab evidence."
+}

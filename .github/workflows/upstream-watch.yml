@@ -1,0 +1,44 @@
+name: upstream-watch
+
+on:
+  schedule:
+    - cron: '23 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare pinned and latest upstream commits
+        id: compare
+        continue-on-error: true
+        run: python scripts/check_upstream.py
+      - name: Open or update drift issue
+        if: steps.compare.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'DSH upstream drift detected'
+            const body = [
+              'The weekly check found that the pinned DSH commit differs from upstream `master`.',
+              '',
+              'Do not update prose automatically. Review architecture, lifecycle, tools, sessions, plugin publishing, compatibility notes, and affected labs in a dedicated PR.'
+            ].join('\n')
+            const { data } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open'
+            })
+            if (!data.some(issue => issue.title === title)) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              })
+            }

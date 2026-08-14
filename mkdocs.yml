@@ -1,0 +1,87 @@
+site_name: 深入理解 DeepSeek Harness
+site_description: 从代码框架、插件生态到生产实践的开源项目书籍
+site_url: https://luxuzhou.github.io/dsh-in-depth/
+repo_url: https://github.com/luxuzhou/dsh-in-depth
+repo_name: luxuzhou/dsh-in-depth
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+plugins:
+  - search:
+      lang:
+        - ja
+        - en
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      type: date
+      enable_creation_date: true
+      enable_git_follow: false
+      fallback_to_build_date: true
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed:
+      alternate_style: true
+nav:
+  - 首页: index.md
+  - 引言: introduction.md
+  - 正文:
+      - 第1章 从模型到 Harness: book/ch01.md
+      - 第2章 Cordis 微内核: book/ch02.md
+      - 第3章 Agent 生命周期: book/ch03.md
+      - 第4章 会话与上下文: book/ch04.md
+      - 第5章 工具与安全策略: book/ch05.md
+      - 第6章 插件、Bundle 与 Profile: book/ch06.md
+      - 第7章 Skills、MCP 与工作流: book/ch07.md
+      - 第8章 Web、SDK 与部署: book/ch08.md
+      - 第9章 生态与生产化: book/ch09.md
+      - 第10章 Data Agent 案例: book/ch10.md
+  - 配套实验:
+      - 实验总览: labs/index.md
+      - 实验状态: LAB_STATUS.md
+  - 求职与成长:
+      - 岗位能力地图: career/roadmap.md
+      - 面试题索引: career/interview.md
+  - 附录:
+      - 兼容性矩阵: appendix/compatibility.md
+      - 源码阅读地图: appendix/source-map.md
+      - 术语表: appendix/glossary.md
+      - 参考资料: appendix/references.md

@@ -1,0 +1,15 @@
+[project]
+name = "dsh-in-depth-book"
+version = "0.1.0"
+description = "深入理解 DeepSeek Harness：架构、插件与工程实践"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+docs = [
+  "mkdocs-material>=9.6,<10",
+  "mkdocs-git-revision-date-localized-plugin>=1.4,<2",
+]
+
+[tool.uv]
+package = false

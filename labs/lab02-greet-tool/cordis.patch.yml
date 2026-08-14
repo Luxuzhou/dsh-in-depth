@@ -1,0 +1,5 @@
+- insert:
+    - id: book-greet-tool
+      name: dsh-book-greet-tool
+      config:
+        greeting: Hello
