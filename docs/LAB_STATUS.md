@@ -9,7 +9,7 @@
 
 | 实验 | 状态 | 当前证据 | 下一门禁 |
 |---|---|---|---|
-| Lab 01 源码地图 | DESIGNED | 固定官方提交和观察步骤 | 保存一次真实`dump-config`与源码关系图 |
+| Lab 01 源码地图 | DESIGNED | 三阶段实验、反事实验证、证据模板与12分量表 | 保存真实`dump-config`、能力关系图和反事实运行证据 |
 | Lab 02 问候工具 | CODE_READY | 示例基于官方`defineTool`教程接口 | 在`0.1.0-rc.5` Web Profile调用并保存事件 |
 | Lab 03 事件观察器 | CODE_READY | 使用官方`session/event`监听形式 | 运行一次工具turn并验证事件配对 |
 | Lab 04 受控Data Agent | CODE_READY | 无依赖单元测试随仓库提供 | CI运行并保存通过记录 |

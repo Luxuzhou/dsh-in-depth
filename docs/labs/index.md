@@ -4,14 +4,15 @@
 
 ## Lab 01：源码地图与运行配置 {#lab-01}
 
-**难度：★　状态：设计完成，待跨平台执行**
+**难度：★★　状态：深度实验设计完成，待跨平台执行**
 
-1. 克隆官方DSH并检出`upstream.lock.json`记录的提交。
-2. 运行`dsh --profile web --dump-config`保存有效插件树。
-3. 任选Tools、Skills或Session能力，找到Definition、Provider和Consumer。
-4. 画出配置行、包、`ctx`服务键和模型可见工具之间的关系。
+1. 固定环境与上游提交，运行`dsh --profile web --dump-config`保存有效插件树。
+2. 任选文件、Shell或Session能力，找到Definition、Provider、Consumer、Policy和Environment。
+3. 追踪一次turn/step轨迹，区分持久事实与实时控制事件。
+4. 通过移除或替换一项配置做反事实实验，比较预测与真实结果。
+5. 重复装载/卸载，检查工具、监听器和外部资源是否正确清理。
 
-验收产物：`config-tree.txt`、一张Mermaid图和一页观察结论。禁止只提交目录截图。
+验收产物：环境记录、`config-tree.txt`、带固定源码证据的Mermaid图、反事实报告和生产边界结论。实验按12分量表验收，10分视为完成；禁止只提交目录截图。
 
 详见 [`labs/lab01-source-map/README.md`](https://github.com/luxuzhou/dsh-in-depth/tree/main/labs/lab01-source-map)。
 

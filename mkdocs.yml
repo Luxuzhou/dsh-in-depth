@@ -81,6 +81,7 @@ nav:
       - 岗位能力地图: career/roadmap.md
       - 面试题索引: career/interview.md
   - 附录:
+      - 深度章节写作标准: appendix/writing-standard.md
       - 兼容性矩阵: appendix/compatibility.md
       - 源码阅读地图: appendix/source-map.md
       - 术语表: appendix/glossary.md
