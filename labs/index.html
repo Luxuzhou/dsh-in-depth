@@ -914,6 +914,8 @@
       
         
       
+        
+      
     
     
     
@@ -958,6 +960,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/writing-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    深度章节写作标准
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1198,14 +1228,15 @@
 <h1 id="_1">配套实验<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>实验用于验证正文中的行为，不以“代码文件存在”代替真实运行证据。每个实验包含目标、前置条件、步骤、验收和延伸任务。</p>
 <h2 id="lab-01">Lab 01：源码地图与运行配置<a class="headerlink" href="#lab-01" title="Permanent link">&para;</a></h2>
-<p><strong>难度：★　状态：设计完成，待跨平台执行</strong></p>
+<p><strong>难度：★★　状态：深度实验设计完成，待跨平台执行</strong></p>
 <ol>
-<li>克隆官方DSH并检出<code>upstream.lock.json</code>记录的提交。</li>
-<li>运行<code>dsh --profile web --dump-config</code>保存有效插件树。</li>
-<li>任选Tools、Skills或Session能力，找到Definition、Provider和Consumer。</li>
-<li>画出配置行、包、<code>ctx</code>服务键和模型可见工具之间的关系。</li>
+<li>固定环境与上游提交，运行<code>dsh --profile web --dump-config</code>保存有效插件树。</li>
+<li>任选文件、Shell或Session能力，找到Definition、Provider、Consumer、Policy和Environment。</li>
+<li>追踪一次turn/step轨迹，区分持久事实与实时控制事件。</li>
+<li>通过移除或替换一项配置做反事实实验，比较预测与真实结果。</li>
+<li>重复装载/卸载，检查工具、监听器和外部资源是否正确清理。</li>
 </ol>
-<p>验收产物：<code>config-tree.txt</code>、一张Mermaid图和一页观察结论。禁止只提交目录截图。</p>
+<p>验收产物：环境记录、<code>config-tree.txt</code>、带固定源码证据的Mermaid图、反事实报告和生产边界结论。实验按12分量表验收，10分视为完成；禁止只提交目录截图。</p>
 <p>详见 <a href="https://github.com/luxuzhou/dsh-in-depth/tree/main/labs/lab01-source-map"><code>labs/lab01-source-map/README.md</code></a>。</p>
 <h2 id="lab-02">Lab 02：可配置问候工具<a class="headerlink" href="#lab-02" title="Permanent link">&para;</a></h2>
 <p><strong>难度：★★　状态：代码完成，待在锁定DSH基线上实跑</strong></p>

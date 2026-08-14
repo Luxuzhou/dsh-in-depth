@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://luxuzhou.github.io/dsh-in-depth/appendix/compatibility/">
+        <link rel="canonical" href="https://luxuzhou.github.io/dsh-in-depth/appendix/writing-standard/">
       
       
-        <link rel="prev" href="../writing-standard/">
+        <link rel="prev" href="../../career/interview/">
       
       
-        <link rel="next" href="../source-map/">
+        <link rel="next" href="../compatibility/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>兼容性矩阵 - 深入理解 DeepSeek Harness</title>
+        <title>深度章节写作标准 - 深入理解 DeepSeek Harness</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              兼容性矩阵
+              深度章节写作标准
             
           </span>
         </div>
@@ -965,34 +965,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../writing-standard/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    深度章节写作标准
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1012,7 +984,7 @@
   <span class="md-ellipsis">
     
   
-    兼容性矩阵
+    深度章节写作标准
   
 
     
@@ -1030,7 +1002,7 @@
   <span class="md-ellipsis">
     
   
-    兼容性矩阵
+    深度章节写作标准
   
 
     
@@ -1059,7 +1031,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        当前基线
+        一章必须回答的八个问题
       
     </span>
   </a>
@@ -1070,7 +1042,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        本书使用的关键接口
+        证据标签
       
     </span>
   </a>
@@ -1081,7 +1053,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        更新规则
+        深度不是字数
       
     </span>
   </a>
@@ -1092,7 +1064,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        已知限制
+        与社区迭代同步
       
     </span>
   </a>
@@ -1103,6 +1075,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    兼容性矩阵
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1229,7 +1229,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        当前基线
+        一章必须回答的八个问题
       
     </span>
   </a>
@@ -1240,7 +1240,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        本书使用的关键接口
+        证据标签
       
     </span>
   </a>
@@ -1251,7 +1251,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        更新规则
+        深度不是字数
       
     </span>
   </a>
@@ -1262,7 +1262,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        已知限制
+        与社区迭代同步
       
     </span>
   </a>
@@ -1286,7 +1286,7 @@
 
 
   
-    <a href="https://github.com/luxuzhou/dsh-in-depth/edit/main/docs/appendix/compatibility.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/luxuzhou/dsh-in-depth/edit/main/docs/appendix/writing-standard.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1294,96 +1294,54 @@
   
 
 
-<h1 id="_1">上游兼容性矩阵<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">当前基线<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>官方仓库</td>
-<td><code>deepseek-ai/deepseek-harness</code></td>
-</tr>
-<tr>
-<td>提交</td>
-<td><code>47f943859bef60e4160492346772ded9b24f765a</code></td>
-</tr>
-<tr>
-<td>包版本</td>
-<td><code>0.1.0-rc.5</code></td>
-</tr>
-<tr>
-<td>Node要求</td>
-<td><code>^22.19.0 || &gt;=24.0.0</code></td>
-</tr>
-<tr>
-<td>包管理器</td>
-<td><code>pnpm@11.7.0</code></td>
-</tr>
-<tr>
-<td>官方状态</td>
-<td>Developer Preview</td>
-</tr>
-<tr>
-<td>快照日期</td>
-<td>2026-08-14</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_3">本书使用的关键接口<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>内容</th>
-<th>基线接口</th>
-<th>受影响章节/实验</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Plugin入口</td>
-<td><code>apply(ctx)</code>、<code>inject</code></td>
-<td>第2、6章，Lab 02/03</td>
-</tr>
-<tr>
-<td>工具定义</td>
-<td><code>defineTool</code>、<code>ctx.tools.register</code></td>
-<td>第5章，Lab 02</td>
-</tr>
-<tr>
-<td>会话观察</td>
-<td><code>ctx.on('session/event', ...)</code></td>
-<td>第3、4章，Lab 03</td>
-</tr>
-<tr>
-<td>Bundle声明</td>
-<td><code>dsh.bundle.patch</code></td>
-<td>第6章，Lab 02</td>
-</tr>
-<tr>
-<td>Profile组合</td>
-<td><code>dsh.profile.bundles</code></td>
-<td>第6章</td>
-</tr>
-<tr>
-<td>Web启动</td>
-<td><code>dsh web</code></td>
-<td>第8章</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_4">更新规则<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>上游HEAD变化不会自动改变本书结论。计划升级时，先运行远程漂移检查，再建立独立PR。若接口仅重命名，更新示例与链接；若语义变化，必须重写相关解释并复跑实验；若官方增加兼容保证，应调整当前“预览期”风险判断。</p>
-<h2 id="_5">已知限制<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h1 id="_1">深度章节写作标准<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>本书不是 API 清单，也不是把官方 README 换一种说法。每个成熟章节都应当形成一条可以复核的论证链：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>真实问题 → 概念边界 → 运行机制 → 源码证据
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>        → 工程权衡 → 失败模式 → 实验验证 → 可迁移结论
+</code></pre></div>
+<h2 id="_2">一章必须回答的八个问题<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>为什么需要它？</strong> 从真实任务或失败现象引出，而不是从术语定义开始堆名词。</li>
+<li><strong>边界在哪里？</strong> 说明本概念负责什么、不负责什么，并处理最容易混淆的相邻概念。</li>
+<li><strong>它怎样运行？</strong> 至少给出一条端到端数据流、控制流或状态变化过程。</li>
+<li><strong>DSH 怎样实现？</strong> 链接到锁定提交中的官方文档、公开类型或源码主线。</li>
+<li><strong>为什么这样设计？</strong> 解释收益、代价、替代方案和成立前提。</li>
+<li><strong>哪里会失败？</strong> 给出可观察表象、可能根因和诊断证据，而不只写抽象风险。</li>
+<li><strong>怎样验证？</strong> 配套实验必须包含预测、操作、验收和证据；文件存在不等于已执行。</li>
+<li><strong>哪些结论可迁移？</strong> 区分版本相关 API 与穿越版本的工程原则。</li>
+</ol>
+<h2 id="_3">证据标签<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>章节中的重要事实应能归入以下层级：</p>
 <ul>
-<li>DSH尚处于快速迭代期，社区插件可能只兼容某个短期提交范围。</li>
-<li>本书首版没有声称Lab 01至03已在所有操作系统验证。</li>
-<li>GitHub主题数据是动态快照，不作为插件安全或质量排名。</li>
+<li><strong>官方保证</strong>：官方文档或公开接口明确承诺；</li>
+<li><strong>源码观察</strong>：锁定提交中的实现事实；</li>
+<li><strong>实验结论</strong>：已在记录环境运行并保存证据；</li>
+<li><strong>工程建议</strong>：作者基于风险、成本和维护性给出的判断。</li>
 </ul>
+<p>不能用较弱证据冒充较强结论。例如，测试源码存在只能算源码观察，不能标成实验通过；仓库中存在某插件，不能证明当前 Profile 已加载。</p>
+<h2 id="_4">深度不是字数<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>字数、标题数、图表数只能作为防止章节退化为提纲的最低门禁，不能代替内容质量。一个章节即使很长，如果只有概念罗列，没有机制、反例和证据，仍然不合格。</p>
+<p>建议成熟章节至少包含：</p>
+<ul>
+<li>一个贯穿章节的真实问题；</li>
+<li>一张边界图或端到端运行图；</li>
+<li>一个具体轨迹或状态变化示例；</li>
+<li>一组源码路标，且固定到 <code>upstream.lock.json</code> 的提交；</li>
+<li>一个设计权衡或替代方案比较；</li>
+<li>一个失败模式/诊断表；</li>
+<li>一个可执行或可验证的配套实验；</li>
+<li>分层思考题与至少一道系统设计面试题。</li>
+</ul>
+<h2 id="_5">与社区迭代同步<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>更新上游基线时，不应自动把新 API 名称批量替换进正文。维护者需要重新检查：</p>
+<ol>
+<li>章节论证的架构问题是否仍然成立；</li>
+<li>当前实现答案发生了什么变化；</li>
+<li>原源码链接与实验是否仍可复现；</li>
+<li>兼容性矩阵和实验状态是否需要降级；</li>
+<li>是否应保留旧版本差异，帮助读者理解设计演进。</li>
+</ol>
+<p>章节的长期价值来自稳定问题与版本答案的明确分离。</p>
 
 
 
@@ -1419,7 +1377,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../writing-standard/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 深度章节写作标准">
+          <a href="../../career/interview/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 面试题索引">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1429,20 +1387,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                深度章节写作标准
+                面试题索引
               </div>
             </div>
           </a>
         
         
           
-          <a href="../source-map/" class="md-footer__link md-footer__link--next" aria-label="下一页: 源码阅读地图">
+          <a href="../compatibility/" class="md-footer__link md-footer__link--next" aria-label="下一页: 兼容性矩阵">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                源码阅读地图
+                兼容性矩阵
               </div>
             </div>
             <div class="md-footer__button md-icon">
